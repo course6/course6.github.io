@@ -1,4 +1,4 @@
 # course6
-
-Jqueryのload使ってHeader読み込んだら、その中のidを拾うJSが上手く動かないので、  
-aboutだけ今はheaderをベタ書きしてる
+Course6は、独自に開発したテキスト教材「LeadBook」をつかい<br>
+苦手科目の成績を格段に飛躍させる学習塾です。<br>
+https://course6.github.io/
