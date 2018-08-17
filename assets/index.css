@@ -72,6 +72,11 @@ footer{
   margin-top: 55px;
 }
 
+.abs{
+  position: absolute;
+  left: 45%;
+}
+
 /* 吹き出し用 */
 .balloon {
  	position: relative;
@@ -174,3 +179,27 @@ footer{
     visibility: visible;
     opacity: 1;
 }
+
+/* フォント用 */
+.noto100 {font-weight:100;}
+.noto300 {font-weight:300;}
+.noto400 {font-weight:400;}
+.noto500 {font-weight:500;}
+.noto700 {font-weight:700;}
+.noto900 {font-weight:900;}
+
+.space5 {letter-spacing: 5px;}
+.space10 {letter-spacing: 10px;}
+.space15 {letter-spacing: 15px;}
+.space20 {letter-spacing: 20px;}
+
+.hei150 {line-height: 150%;}
+.hei160 {line-height: 160%;}
+.hei170 {line-height: 170%;}
+.hei180 {line-height: 180%;}
+.hei190 {line-height: 190%;}
+.hei200 {line-height: 200%;}
+
+/* ボタン用 */
+.px-7{padding: 13px 70px;}
+.px-10{padding: 13px 90px;}
