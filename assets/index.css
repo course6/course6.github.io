@@ -1,4 +1,7 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 body{
+  font-family: 'Noto Sans JP', sans-serif;
   background-color: #eeeeee;
 }
 
@@ -9,7 +12,7 @@ footer{
 
 #top-content{
   background: url("../image/home-bg-re.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: 190% 100%;
 }
 
 #bottom-content{
