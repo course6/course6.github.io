@@ -12,7 +12,7 @@ footer{
 
 #top-content{
   background: url("../image/home-bg-re.jpg") no-repeat center center;
-  background-size: 190% 100%;
+  background-size: 150% 100%;
 }
 
 #bottom-content{
@@ -23,6 +23,10 @@ footer{
 #about-content{
   background: url("../image/about-bg.jpg") no-repeat center center;
   background-size: cover;
+}
+
+.middle-small{
+  font-size: 11px;
 }
 
 .very-small{
@@ -53,7 +57,6 @@ footer{
   color: blue;
 }
 
-
 .logo-blue{
   background: url("../image/logo-blue.png") no-repeat left center;
 }
@@ -74,7 +77,11 @@ footer{
 
 .abs{
   position: absolute;
-  left: 45%;
+  left: 50%;
+}
+
+.border{
+  border-width: 2.5px !important;
 }
 
 /* 吹き出し用 */
@@ -181,6 +188,7 @@ footer{
 }
 
 /* フォント用 */
+.notobolder{font-weight:bolder;}
 .noto100 {font-weight:100;}
 .noto300 {font-weight:300;}
 .noto400 {font-weight:400;}
@@ -188,11 +196,13 @@ footer{
 .noto700 {font-weight:700;}
 .noto900 {font-weight:900;}
 
+/* 字と字の間 */
 .space5 {letter-spacing: 5px;}
 .space10 {letter-spacing: 10px;}
 .space15 {letter-spacing: 15px;}
 .space20 {letter-spacing: 20px;}
 
+/* 行間 */
 .hei150 {line-height: 150%;}
 .hei160 {line-height: 160%;}
 .hei170 {line-height: 170%;}
@@ -201,5 +211,8 @@ footer{
 .hei200 {line-height: 200%;}
 
 /* ボタン用 */
-.px-7{padding: 13px 70px;}
+.px-6{padding: 0.4rem 4rem;}
 .px-10{padding: 13px 90px;}
+.btn-dark{
+  background: rgba(0,0,0,0.2);
+}
