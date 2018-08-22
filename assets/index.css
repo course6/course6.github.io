@@ -5,9 +5,10 @@ body{
   background-color: #eeeeee;
 }
 
-footer{
+.footer{
   background-color: #243484;
   text-align: center;
+  position:absolute;
 }
 
 #top-content{
@@ -31,6 +32,10 @@ footer{
 
 .middle-small{
   font-size: 11px;
+}
+
+.foot-small{
+  font-size: 7px;
 }
 
 .very-small{
@@ -205,6 +210,7 @@ footer{
 .noto900 {font-weight:900;}
 
 /* 字と字の間 */
+.space1 {letter-spacing: 1px;}
 .space2 {letter-spacing: 2px;}
 .space3 {letter-spacing: 3px;}
 .space4 {letter-spacing: 4px;}
