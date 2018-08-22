@@ -25,6 +25,10 @@ footer{
   background-size: cover;
 }
 
+.btn-small{
+  font-size: 13px;
+}
+
 .middle-small{
   font-size: 11px;
 }
@@ -55,6 +59,10 @@ footer{
 
 .text-blue{
   color: blue;
+}
+
+.text-gray{
+  color: gray;
 }
 
 .logo-blue{
@@ -197,6 +205,9 @@ footer{
 .noto900 {font-weight:900;}
 
 /* 字と字の間 */
+.space2 {letter-spacing: 2px;}
+.space3 {letter-spacing: 3px;}
+.space4 {letter-spacing: 4px;}
 .space5 {letter-spacing: 5px;}
 .space10 {letter-spacing: 10px;}
 .space15 {letter-spacing: 15px;}
@@ -212,7 +223,7 @@ footer{
 
 /* ボタン用 */
 .px-6{padding: 0.4rem 4rem;}
-.px-10{padding: 13px 90px;}
+.px-10{padding: 0.5rem 2rem;}
 .btn-dark{
   background: rgba(0,0,0,0.2);
 }
