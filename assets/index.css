@@ -26,6 +26,10 @@ body{
   background-size: cover;
 }
 
+.more-small{
+  font-size: 14px;
+}
+
 .btn-small{
   font-size: 13px;
 }
@@ -36,6 +40,10 @@ body{
 
 .foot-small{
   font-size: 7px;
+}
+
+.pain-small{
+  font-size: 6px;
 }
 
 .very-small{
@@ -91,6 +99,11 @@ body{
 .abs{
   position: absolute;
   left: 50%;
+}
+
+.abs-about{
+  position: absolute;
+  left: 47%;
 }
 
 .border{
@@ -220,6 +233,7 @@ body{
 .space20 {letter-spacing: 20px;}
 
 /* 行間 */
+.hei70{line-height: 70%;}
 .hei150 {line-height: 150%;}
 .hei160 {line-height: 160%;}
 .hei170 {line-height: 170%;}
@@ -232,4 +246,9 @@ body{
 .px-10{padding: 0.5rem 2rem;}
 .btn-dark{
   background: rgba(0,0,0,0.2);
+}
+
+/* about用 */
+.mt-about{
+  margin-top: 2.1rem !important;
 }
