@@ -43,7 +43,7 @@ body{
 }
 
 .pain-small{
-  font-size: 6px;
+  font-size: 8px;
 }
 
 .very-small{
@@ -101,9 +101,11 @@ body{
   left: 50%;
 }
 
-.abs-about{
-  position: absolute;
-  left: 47%;
+.why{
+  background: url("../image/slash.png") no-repeat;
+  /* background: url("../image/icon-boy.png") no-repeat right center; */
+  background-position: 58% 20%;
+  background-size: 20%;
 }
 
 .border{
@@ -251,5 +253,5 @@ body{
 
 /* about用 */
 .mt-about{
-  margin-top: 2.1rem !important;
+  margin-top: 2.4rem !important;
 }
