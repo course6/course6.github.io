@@ -108,6 +108,12 @@ body{
   background-size: 20%;
 }
 
+.remove{
+  background: url("../image/slash.png") no-repeat;
+  background-position: 55% 20%;
+  background-size: 15%;
+}
+
 .border{
   border-width: 2.5px !important;
 }
