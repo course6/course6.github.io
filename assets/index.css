@@ -247,10 +247,13 @@ body{
 
 /* ボタン用 */
 .px-6{padding: 0.4rem 4rem;}
-.px-7{padding: 0.8rem 3.5rem;}
+.px-7{padding: 0.8rem 3.2rem;}
 .px-10{padding: 0.5rem 2rem;}
 .btn-dark{
   background: rgba(0,0,0,0.2);
+}
+@media (max-width:335px) {
+  .px-7{padding: 0.8rem 2.5rem;}
 }
 
 /* about用 */
