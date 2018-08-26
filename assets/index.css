@@ -38,11 +38,7 @@ body{
   font-size: 11px;
 }
 
-.foot-small{
-  font-size: 7px;
-}
-
-.pain-small{
+.foot-small, .pain-small{
   font-size: 8px;
 }
 
