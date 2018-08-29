@@ -18,9 +18,13 @@ $(function () {
   $('#select-day')
     .focusout(function(e) {
       let SelectDay = new Date($(this).val()).getDay();
-      console.log(SelectDay);
+      // console.log(SelectDay);
       if (!SelectDay || SelectDay == 6 || SelectDay == 0) {
-        $(this).after('<span class="text-red">平日を入力してください</span>')
+        if ($(this).next().length == 0) {
+          $(this).after('<span class="text-red">平日を入力してください</span>')
+        }
+      }else{
+        $(this).next().remove();
       }
     });
 });
