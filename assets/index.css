@@ -118,7 +118,21 @@ body{
   position: absolute;
 }
 
+.society {
+  background-color: rgba(220, 220, 220, 0.6)
+}
 
+.yet {
+  position: absolute;
+  /* margin: 2em; */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 30%;
+  height: 3.2rem;
+}
 
 /* 吹き出し用 */
 .balloon {
