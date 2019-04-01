@@ -114,6 +114,12 @@ body{
   border-width: 2.5px !important;
 }
 
+.a-text {
+  position: absolute;
+}
+
+
+
 /* 吹き出し用 */
 .balloon {
  	position: relative;
