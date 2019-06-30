@@ -51,7 +51,7 @@
 
 
       <div class="row">
-        <div class="col-md my-1">
+        <div class="col mt-5 mb-3">
           <h4>よくある質問</h4>
         </div>
       </div>
@@ -84,10 +84,13 @@
             </div>
             <div class="card-body">
               <span class="text-blue a-text">A</span>
-              <p class="card-text">
+              <p class="card-text mb-0">
                 テキスト購入はありません。<br>
                 LeadBookが教材です。
               </p>
+              <div class="d-none d-sm-block link-about">
+                <li><a href="about.html">Leadbookとは？</a></li>
+              </div>
             </div>
           </div>
         </div>
@@ -111,12 +114,27 @@
 
     </div>
 
-    <div id="footer"></div>
-    <script>
-    $(function(){
-      $("#footer").load("footer.html");
-    });
-    </script>
+    <div class="container footer">
+      <div class="row">
+        <div class="mx-auto mt-4 mb-3">
+          <img src="./image/logo-white.png" alt="foot-logo" width="22%"></img>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-none d-sm-block mx-auto mb-3 more-small">
+          <a href="about.html" class="text-white mr-3">塾について</a>
+          <a href="price.html" class="text-white mr-3">授業料</a>
+          <a href="student-voice.html" class="text-white mr-3">生徒の声</a>
+          <a href="faq.html" class="text-white mr-3">よくある質問</a>
+          <a href="trial.html" class="text-white mr-3">無料体験</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <p class="text-white foot-small space1">COPYRIGHT ©2018 Course6 ALLRIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

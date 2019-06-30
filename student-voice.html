@@ -6,6 +6,7 @@
     <title>Course6</title>
     <meta name="description" content="Course6は、独自に開発したテキスト教材「LeadBook」で苦手科目の成績を格段に飛躍させる「予習型学習塾」です。">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Course6" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="Course6は、独自に開発したテキスト教材「LeadBook」で苦手科目の成績を格段に飛躍させる「予習型学習塾」です。" />
@@ -19,12 +20,6 @@
   <body>
     <div class="container first bg-white">
       <div class="row">
-        <div class="col" id="header"></div>
-        <!-- <script>
-        $(function(){
-          $("#header").load("header.html");
-        });
-        </script> -->
         <nav class="navbar navbar-expand-sm fixed-top bg-white">
           <div class="container my-1">
             <a class="navbar-brand logo-blue" href="index.html"></a>
@@ -50,7 +45,7 @@
       <script src="./assets/main.js"></script>
 
       <div class="row">
-        <div class="col-md my-1">
+        <div class="col mt-5 mb-3">
           <h4>生徒の声</h4>
         </div>
       </div>
@@ -58,91 +53,123 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-3 mt-5">
-          <img src="./image/icon-boy.png" alt="boy1" class="mt-3" width="100%" height="35%">
+        <div class="col-2 mt-4 pr-0 pt-2 text-right">
+          <img src="./image/icon-boy.png" alt="boy1" width="80px">
         </div>
 
-        <div class="col-9">
+        <div class="col-9 col-offset-1 pl-4">
           <div class="balloon">
-            <p>
-              通う前は１年半ずっと20点代だったが、使ってからは70点代に伸びて、今は80点が当たり前になった。
+            <p class="more-small">
+              <span class="no-wrap">通う前は１年半ずっと20点代だったが、</span>
+              <span class="no-wrap">使ってからは70点代に伸びて、</span><br>
+              <span class="no-wrap">今は80点が当たり前になった。</span>
             </p>
           </div>
-          <p class="small">板橋第一中学校　N.Sさん</p>
+          <p class="small ml-4">板橋第一中学校　N.Sさん</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-3 mt-5">
-          <img src="./image/icon-girl.png" alt="girl1" width="100%" height="47%">
+        <div class="col-2 mt-4 pr-0 pt-2 text-right">
+          <img src="./image/icon-girl.png" alt="girl1" width="80px%">
         </div>
 
-        <div class="col-9">
+        <div class="col-9 col-offset-1 pl-4">
           <div class="balloon">
-            <p>
+            <p class="more-small">
               すでに学んだことを学校で教わるので、学校の授業が復習になり理解度が増した。
             </p>
           </div>
-          <p class="small">志村第一中学校　H.Tさん</p>
+          <p class="small ml-4">志村第一中学校　H.Tさん</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-3 mt-5">
-          <img src="./image/icon-boy.png" alt="boy2" width="100%" height="37%">
+        <div class="col-2 mt-4 pr-0 pt-2 text-right">
+          <img src="./image/icon-boy.png" alt="boy2" width="80px%">
         </div>
-
-        <div class="col-9">
+  
+        <div class="col-9 col-offset-1 pl-4">
           <div class="balloon">
-            <p>
-              Course6では勉強はLeadbook、講師は学習の管理や将来のことなど幅広く相談に乗ってくれる。
-            </p>
-          </div>
-          <p class="small">大東文化大学第一高等学校　T.Oさん</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-3 mt-6">
-          <img src="./image/icon-boy.png" alt="boy3" width="100%" height="33%">
-        </div>
-
-        <div class="col-9">
-          <div class="balloon">
-            <p>
+            <p class="more-small">
               他の塾で4コマかけて教えてもらったことが1コマ以内に学び終わった。<br>
               早く終わる分、時間が浮いて他の科目や復習にあてることができた。
             </p>
           </div>
-          <p class="small">志村第一中学校　J.Tさん</p>
+          <p class="small ml-4">志村第一中学校　J.Tさん</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-3 mt-5">
-          <img src="./image/icon-girl.png" alt="girl3" width="100%" height="50%">
+        <div class="col-2 mt-4 pr-0 pt-2 text-right">
+          <img src="./image/icon-girl.png" alt="girl2" width="80px%">
         </div>
-
-        <div class="col-9">
+  
+        <div class="col-9 col-offset-1 pl-4">
           <div class="balloon">
-            <p>
-              これから学校で学ぶことを先に学ぶので、気持ちにゆとりが生まれ、安心できた。
+            <p class="more-small">
+              学校の先生が解説することは全て学び終わっているので、<br>
+              授業がかなり楽になった。
             </p>
           </div>
-          <p class="small">上板橋第三中学校　D.Kさん</p>
+          <p class="small ml-4">上板橋第三中学校　Y.Wさん</p>
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-2 mt-4 pr-0 pt-2 text-right">
+          <img src="./image/icon-boy.png" alt="boy3" width="80px%">
+        </div>
 
+        <div class="col-9 col-offset-1 pl-4">
+          <div class="balloon">
+            <p class="more-small">
+              <span class="no-wrap">Course6では勉強はLeadbook、講師は学習の管理や将来のことなど</span>
+              <span class="no-wrap">幅広く相談に乗ってくれる。</span>
+            </p>
+          </div>
+          <p class="small ml-4">大東文化大学第一高等学校　T.Oさん</p>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="col-2 mt-4 pr-0 pt-2 text-right">
+          <img src="./image/icon-girl.png" alt="girl3" width="80px%">
+        </div>
+
+        <div class="col-9 col-offset-1 pl-4">
+          <div class="balloon">
+            <p class="more-small">
+              学校の先生が授業中に問題を出しても答えを知っているため、<br>
+              周りの生徒が考えている間は暇になった。
+            </p>
+          </div>
+          <p class="small ml-4">上板橋第三中学校　D.Kさん</p>
+        </div>
+      </div>
     </div>
 
-    <div id="footer"></div>
-    <script>
-    $(function(){
-      $("#footer").load("footer.html");
-    });
-    </script>
-
+    <div class="container footer">
+      <div class="row">
+        <div class="mx-auto mt-4 mb-3">
+          <img src="./image/logo-white.png" alt="foot-logo" width="22%"></img>
+        </div>
+      </div>
+      <div class="row">
+        <div class="d-none d-sm-block mx-auto mb-3 more-small">
+          <a href="about.html" class="text-white mr-3">塾について</a>
+          <a href="price.html" class="text-white mr-3">授業料</a>
+          <a href="student-voice.html" class="text-white mr-3">生徒の声</a>
+          <a href="faq.html" class="text-white mr-3">よくある質問</a>
+          <a href="trial.html" class="text-white mr-3">無料体験</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <p class="text-white foot-small space1">COPYRIGHT ©2018 Course6 ALLRIGHTS RESERVED.</p>
+        </div>
+      </div>
+    </div>
+  
   </body>
 </html>
