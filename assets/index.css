@@ -8,12 +8,11 @@ body{
 .footer{
   background-color: #243484;
   text-align: center;
-  position:absolute;
 }
 
 #top-content{
   background: url("../image/home-bg-re.jpg") no-repeat center center;
-  background-size: 150% 100%;
+  background-size: cover;
 }
 
 #bottom-content{
@@ -24,6 +23,14 @@ body{
 #about-content{
   background: url("../image/about-bg.jpg") no-repeat center center;
   background-size: cover;
+}
+
+.no-wrap {
+  display: inline-block;
+}
+
+.middle {
+  font-size: 26px;
 }
 
 .more-small{
@@ -100,13 +107,13 @@ body{
 .why{
   background: url("../image/slash.png") no-repeat;
   /* background: url("../image/icon-boy.png") no-repeat right center; */
-  background-position: 58% 20%;
+  background-position: 55% 20%;
   background-size: 20%;
 }
 
 .remove{
   background: url("../image/slash.png") no-repeat;
-  background-position: 55% 20%;
+  background-position: 80% 50%;
   background-size: 15%;
 }
 
@@ -138,10 +145,10 @@ body{
 .balloon {
  	position: relative;
 	display: inline-block;
- 	margin: 1.5em 0 1.5em 15px;
+ 	margin: 1.5em 0 0.6em 15px;
 	padding: 7px 10px;
-	min-width: 120px;
- 	max-width: 100%;
+	/* min-width: 120px; */
+ 	width: 100%;
  	color: #555;
 	font-size: 16px;
 	background: #FFF;
@@ -178,6 +185,12 @@ body{
 
 .card-text {
   padding: 0 0 0 1rem;
+}
+
+.link-about {
+  float: right;
+  list-style: none;
+  text-decoration: underline;
 }
 
 /* メニュー用 */
@@ -281,7 +294,7 @@ body{
 
 /* about用 */
 .mt-about{
-  margin-top: 2.4rem !important;
+  margin-top: 1.1rem !important;
 }
 
 /* 質問用 */
