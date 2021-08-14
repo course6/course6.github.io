@@ -57,4 +57,20 @@
   cursor: pointer;
   background: url("../../../assets/image/logo-blue.png") no-repeat left center;
   background-size: 25%;
+
+}
+@media (max-width: 375px) {
+  .logo-blue {
+    background-size: 50%;
+  }
+}
+
+.first {
+  margin-top: 55px;
+}
+
+.navbar-brand {
+  background-size: contain;
+  height: 20px;
+  width: 40%;
 }
