@@ -55,4 +55,6 @@
 
 .logo-blue {
   cursor: pointer;
+  background: url("../../../assets/image/logo-blue.png") no-repeat left center;
+  background-size: 25%;
 }

@@ -10,21 +10,6 @@ body {
   text-align: center;
 }
 
-#top-content {
-  background: url("./assets/image/home-bg-re.jpg") no-repeat center center;
-  background-size: cover;
-}
-
-#bottom-content {
-  background: url("./assets/image/price-bg.jpg") no-repeat;
-  background-size: 100% 180px;
-}
-
-#about-content {
-  background: url("./assets/image/about-bg.jpg") no-repeat center center;
-  background-size: cover;
-}
-
 .no-wrap {
   display: inline-block;
 }
@@ -83,10 +68,6 @@ body {
   color: gray;
 }
 
-.logo-blue {
-  background: url("./assets/image/logo-blue.png") no-repeat left center;
-}
-
 .logo-white {
   background: url("./assets/image/logo-white.png") no-repeat left center;
 }
@@ -104,19 +85,6 @@ body {
 .abs {
   position: absolute;
   left: 50%;
-}
-
-.why {
-  background: url("./assets/image/slash.png") no-repeat;
-  /* background: url("./assets/image/icon-boy.png") no-repeat right center; */
-  background-position: 55% 20%;
-  background-size: 20%;
-}
-
-.remove {
-  background: url("./assets/image/slash.png") no-repeat;
-  background-position: 80% 50%;
-  background-size: 15%;
 }
 
 .border {
