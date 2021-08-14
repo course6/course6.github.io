@@ -9,9 +9,21 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { PricePageComponent } from './price-page/price-page.component';
 import { VoicePageComponent } from './voice-page/voice-page.component';
 import { TrialPageComponent } from './trial-page/trial-page.component';
+import { HeaderComponent } from './component/header/header.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, TopPageComponent, AboutPageComponent, FaqPageComponent, PricePageComponent, VoicePageComponent, TrialPageComponent],
+  declarations: [
+    AppComponent,
+    TopPageComponent,
+    AboutPageComponent,
+    FaqPageComponent,
+    PricePageComponent,
+    VoicePageComponent,
+    TrialPageComponent,
+    HeaderComponent,
+    FooterComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
