@@ -11,6 +11,7 @@ import { VoicePageComponent } from './voice-page/voice-page.component';
 import { TrialPageComponent } from './trial-page/trial-page.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { ButtonComponent } from './component/button/button.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FooterComponent } from './component/footer/footer.component';
     TrialPageComponent,
     HeaderComponent,
     FooterComponent,
+    ButtonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

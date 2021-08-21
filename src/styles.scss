@@ -1,6 +1,12 @@
-@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
-
+* {
+  font-family: "Noto Sans JP", sans-serif !important;
+}
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  background-color: #eeeeee;
+  background-color: #E5E5E5;
+  color: #323232;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
 }
