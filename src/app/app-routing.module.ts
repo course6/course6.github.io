@@ -32,6 +32,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./trial-page/trial-page.module').then((m) => m.TrialPageModule),
   },
+  {path: '**', redirectTo: '/'}
 ];
 
 @NgModule({
