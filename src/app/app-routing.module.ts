@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TopPageModule } from './top-page/top-page.module';
-import { AboutPageModule } from './about-page/about-page.module';
 import { FaqPageModule } from './faq-page/faq-page.module';
 import { PricePageModule } from './price-page/price-page.module';
 import { VoicePageModule } from './voice-page/voice-page.module';
@@ -12,11 +11,6 @@ const routes: Routes = [
     path: '',
     loadChildren: () =>
       import('./top-page/top-page.module').then((m) => m.TopPageModule),
-  },
-  {
-    path: 'about',
-    loadChildren: () =>
-      import('./about-page/about-page.module').then((m) => m.AboutPageModule),
   },
   {
     path: 'faq',
@@ -44,7 +38,6 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' }),
     TopPageModule,
-    AboutPageModule,
     FaqPageModule,
     PricePageModule,
     VoicePageModule,
