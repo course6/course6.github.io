@@ -1,5 +1,92 @@
 <app-header></app-header>
 
-<div class="container">priceeeeeeee!</div>
+<div class="container">
+  <section class="row header">
+    <h1>料金プラン</h1>
+    <p>
+      Course6は、科目数や受講頻度により費用が変化します。<br />
+      不安な方は、ぜひ無料相談をご活用ください。
+    </p>
+  </section>
+
+  <section class="row price">
+    <div>
+      <div>
+        <p>無料相談</p>
+        <p style="margin: 50px 0 30px 0">
+          入塾前のご相談や体験入塾の場合はこちら。
+        </p>
+        <p>0円</p>
+        <app-button
+          text="このプランを選択"
+          [height]="45"
+          [width]="262"
+          link="/trial"
+        ></app-button>
+      </div>
+      <div>
+        <p>ベーシック（週1/90分）</p>
+        <p style="margin: 24px 0 31px 0">
+          ・週1（月4コマ）<br />
+          ・1コマあたり90分<br />
+          ・マンツーマン指導<br />
+        </p>
+        <p>18,900円 (税込) / 月</p>
+        <app-button
+          text="このプランを選択"
+          [height]="45"
+          [width]="262"
+          link="/trial"
+        ></app-button>
+      </div>
+    </div>
+    <p>現在、入塾金はかかりません。維持費や管理費もかかりません。</p>
+  </section>
+
+  <section class="row plan">
+    <div>
+      <h2>プランの参考例</h2>
+      <p>
+        科目数や、頻度によりお値段が変わります。<br />
+        お子様の状況や、ライフスタイルに合わせてご検討いただけます。
+      </p>
+    </div>
+    <div>
+      <div>
+        <p>
+          1科目 / 週1
+          <span>の場合</span>
+        </p>
+        <p>
+          ・1科目（英語）<br />
+          ・週1（月4回）
+        </p>
+        <p>18,900円 (税込) / 月</p>
+      </div>
+      <div>
+        <p>
+          1科目 / 週2
+          <span>の場合</span>
+        </p>
+        <p>
+          ・1科目（数学）<br />
+          ・週2（月8回）
+        </p>
+        <p>37,800円（税込）/ 月</p>
+      </div>
+      <div>
+        <p>
+          2科目 / 週1
+          <span>の場合</span>
+        </p>
+        <p>
+          ・2科目（英語、数学）<br />
+          ・週1（それぞれ月4回）
+        </p>
+        <p>37,800円（税込）/ 月</p>
+      </div>
+    </div>
+  </section>
+</div>
 
 <app-footer></app-footer>
