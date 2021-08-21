@@ -11,7 +11,7 @@
       アウトプット前提の学びのサイクルを実践する<br />
       マンツーマンのオンライン学習塾です
     </p>
-    <app-button text="無料相談を申し込む"></app-button>
+    <app-button text="無料相談を申し込む" link="/trial"></app-button>
     <img
       class="curve-image"
       src="./assets/image/top-curve.png"
@@ -87,7 +87,7 @@
         <p>通塾型よりオンライン型を好みます。</p>
       </div>
     </div>
-    <app-button text="生徒の声を見る"></app-button>
+    <app-button text="生徒の声を見る" [height]="45" [width]="240" link="/student-voice"></app-button>
   </section>
 
   <section class="row flow">
@@ -129,7 +129,12 @@
         />
       </div>
     </div>
-    <app-button text="無料相談を申し込む"></app-button>
+    <app-button
+      text="無料相談を申し込む"
+      [height]="45"
+      [width]="240"
+      link="/trial"
+    ></app-button>
   </section>
 </div>
 
