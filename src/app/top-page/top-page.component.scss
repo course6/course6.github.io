@@ -90,6 +90,8 @@ section:first-child {
       display: flex;
       flex-direction: column;
       align-items: center;
+      max-width: 300px;
+      justify-content: start;
       > span {
         justify-content: center;
         display: flex;
