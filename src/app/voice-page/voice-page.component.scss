@@ -57,3 +57,46 @@
     margin: 22px 0 100px 0;
   }
 }
+
+@media (max-width: 749px) {
+  .header {
+    margin-bottom: 0;
+    h1 {
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 140%;
+    }
+  }
+
+  .voice {
+    display: block;
+
+    > div {
+      display: block;
+      div {
+        text-align: start;
+        height: 100%;
+        width: 100%;
+        display: block;
+        padding: 16px 16px 1px 16px;
+        > img {
+          margin: 0 5px 12px 0;
+        }
+        > span {
+          display: initial;
+        }
+      }
+      div:not(:last-child) {
+        margin: 0 10px 10px 0;
+      }
+    }
+  }
+
+  .notice {
+    p {
+      line-height: 160%;
+      color: #999999;
+      margin: 45px 0 100px 0;
+    }
+  }
+}
