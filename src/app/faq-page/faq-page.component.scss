@@ -18,7 +18,7 @@
   display: block;
   margin-bottom: 100px;
   > div {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     padding: 31px 0 25px 24px;
@@ -47,9 +47,23 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 35px;
-        color: #EB8002;
+        color: #eb8002;
         margin-right: 8px;
       }
+    }
+  }
+}
+
+@media (max-width: 749px) {
+  .header {
+    margin-bottom: 15px;
+  }
+
+  .faq {
+    margin-bottom: 80px;
+
+    > div {
+      padding: 25px 16px 19px 16px;
     }
   }
 }
