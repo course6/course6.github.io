@@ -56,14 +56,18 @@
 
 @media (max-width: 749px) {
   .header {
+    text-align: start;
     margin-bottom: 15px;
+    padding: 40px 16px 0 16px;
   }
 
   .faq {
     margin-bottom: 80px;
-
     > div {
       padding: 25px 16px 19px 16px;
+      width: 343px;
+      height: 100%;
+      margin-left: 16px;
     }
   }
 }

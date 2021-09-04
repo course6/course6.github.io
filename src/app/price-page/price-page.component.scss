@@ -111,23 +111,33 @@
 
 @media (max-width: 749px) {
   .header {
+    text-align: start;
     padding: 40px 16px 0 16px;
+    h1 {
+      font-weight: 900;
+    }
   }
 
   .price {
     > div {
       display: block;
       div {
+        margin: 0 32px 24px 16px;
+
+        width: 343px;
         height: 100%;
-        width: 100%;
         padding: 16px;
         .basic,
         .free {
           margin: 8px 0 24px 0;
         }
       }
+      div:not(:last-child) {
+        margin: 0 32px 24px 16px;
+      }
     }
   }
+
   .plan {
     padding: 0 16px 0 16px;
     h2 {
