@@ -62,12 +62,17 @@
   }
 
   .faq {
-    margin-bottom: 80px;
+    padding: 0 20px;
     > div {
       padding: 25px 16px 19px 16px;
-      width: 343px;
-      height: 100%;
-      margin-left: 16px;
+      width: 100%;
+      height: auto;
+
+      p:first-child {
+        span {
+          font-size: 20px;
+        }
+      }
     }
   }
 }

@@ -53,19 +53,19 @@
     margin-bottom: 65px;
     > div {
       text-align: initial;
-      p:first-child {
+      .student-p-1 {
         font-weight: 900;
         font-size: 48px;
         line-height: 71px;
         color: #243484;
       }
-      p:nth-child(2) {
+      .student-p-2 {
         font-weight: 900;
         font-size: 32px;
         line-height: 47px;
         color: #243484;
       }
-      p:last-child {
+      .student-p-3 {
         font-size: 16px;
         line-height: 24px;
       }
@@ -166,7 +166,7 @@
 
 @media (max-width: 999px) {
   .top {
-    padding: 60px 0 0 17px;
+    padding: 40px 16px 0 16px;
     height: 566px;
     background-image: url("/assets/image/top-curve.png"),
       linear-gradient(70.39deg, #f2f4ff 0.82%, #ffffff 100%);
@@ -181,16 +181,16 @@
       }
     }
     p + p {
-      padding: 10px 0 25px 0;
+      padding: unset;
       font-size: 16px;
-      line-height: 30px;
+      line-height: 160%;
     }
 
     .top-image {
       position: initial;
-      width: calc(200px + 35vw);
+      width: 100%;
       height: 196px;
-      margin-bottom: 30px;
+      margin: 16px 0 40px 0;
     }
   }
 }
@@ -213,29 +213,30 @@
     > div {
       display: block;
       margin-bottom: 0;
+      text-align: center;
       > div {
-        p:first-child {
+        .student-p-1 {
           font-size: 24px;
           line-height: 36px;
           font-weight: 900;
           color: #243484;
         }
-
-        p:nth-child(2) {
+        p.student-p-2 {
           font-size: 24px;
           line-height: 36px;
           font-weight: 900;
           color: #243484;
         }
-
-        p:last-child {
+        .student-p-3 {
           font-size: 16px;
           line-height: 24px;
           margin-bottom: 40px;
         }
       }
-      img + div,
-      div + img {
+      img {
+        width: 75%;
+      }
+      img + div {
         margin-left: 0;
       }
     }
@@ -243,7 +244,7 @@
 
   .student {
     background-color: #fafafa;
-    padding: 40px 0;
+    padding: 40px 20px;
     h1 {
       font-weight: 900;
       font-size: 32px;
@@ -252,10 +253,14 @@
     }
     div {
       display: block;
-      padding: 0 20px;
       > div {
         max-width: 1000px;
         > span {
+          height: 120px;
+          width: 120px;
+          > img {
+            width: 55%;
+          }
           & + p {
             margin-top: 10px;
             & + p {
@@ -268,7 +273,7 @@
   }
 
   .flow {
-    padding: 0 0 150px 0;
+    padding: 0 16px 150px 16px;
     h1 {
       font-weight: 900;
       font-size: 32px;
@@ -278,7 +283,7 @@
     }
     > div {
       display: block;
-      margin: 0 0 40px 16px;
+      margin: 0 0 40px 0;
       > div {
         width: 65vh;
         height: 197px;
@@ -306,7 +311,7 @@
   .flow {
     > div {
       > div {
-        width: 343px;
+        width: 100%;
       }
     }
   }

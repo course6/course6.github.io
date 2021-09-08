@@ -73,16 +73,16 @@
 
   .voice {
     display: block;
-
+    padding: 0 20px;
     > div {
       display: block;
       div {
         text-align: start;
-        height: 100%;
-        width: 343px;
+        height: auto;
+        width: 100%;
         display: block;
         padding: 16px 16px 1px 16px;
-        margin: 0 10px 10px 16px;
+        margin: 0 0 10px 0;
         > img {
           margin: 0 5px 12px 0;
         }
@@ -91,7 +91,7 @@
         }
       }
       div:not(:last-child) {
-        margin: 0 10px 10px 16px;
+        margin: 0 0 10px 0;
       }
     }
   }

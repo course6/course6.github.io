@@ -12,7 +12,11 @@
       内容も空間も他の誰かと共有しない。
     </p>
     <img class="top-image" src="./assets/image/mv.svg" alt="top-picture" />
-    <app-button text="無料相談を申し込む" link="/trial"></app-button>
+    <app-button
+      text="無料相談を申し込む"
+      link="/trial"
+      [width]="getButtonWidth()"
+    ></app-button>
   </section>
 
   <section class="row feature">
@@ -20,9 +24,9 @@
     <div>
       <img src="./assets/image/relax-place.svg" alt="relax-place" />
       <div>
-        <p>01</p>
-        <p>自分が落ち着く場所で</p>
-        <p>
+        <p class="student-p-1">01</p>
+        <p class="student-p-2">自分が落ち着く場所で</p>
+        <p class="student-p-3">
           完全オンラインのため教室がありません。<br />
           入塾から卒業まですべてオンラインで完結させることができます。<br />
           他の生徒に会うことは一切なく、完全プライベートで学習することができます。
@@ -30,11 +34,11 @@
       </div>
     </div>
     <div>
+      <img src="./assets/image/output.svg" alt="output" class="pc-none" />
       <div>
-        <img src="./assets/image/output.svg" alt="output" class="pc-none" />
-        <p>02</p>
-        <p>マンツーマン・対話型</p>
-        <p>
+        <p class="student-p-1">02</p>
+        <p class="student-p-2">マンツーマン・対話型</p>
+        <p class="student-p-3">
           完全マンツーマン制を採用しています。一般的な個別指導塾のように別の生徒への対応で自分が待たされるといった心配はありません。<br />
           また学校のような講義型ではなく対話型を採用しています。
         </p>
@@ -44,9 +48,9 @@
     <div>
       <img src="./assets/image/self-study.svg" alt="self-study" />
       <div>
-        <p>03</p>
-        <p>自習サポート</p>
-        <p>
+        <p class="student-p-1">03</p>
+        <p class="student-p-2">自習サポート</p>
+        <p class="student-p-3">
           自分が必要とする学力を手に入れるには自習しかありません。私たちは生徒の志望校に必要な知識量（範囲）を提示し、生徒はそれを参考に自習します。
           自習で躓きそうな箇所（多くの生徒が躓きやすい単元については）既存の解説に拘らず、より詳細なものを作成し生徒に提供し続けます。
           また「わかる」と「できる」は異なるという考えのもと、問題の正答率を記録、保存しています。
