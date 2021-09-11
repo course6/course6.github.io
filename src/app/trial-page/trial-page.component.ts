@@ -13,7 +13,10 @@ export class TrialPageComponent implements OnInit {
 
   changeDate(event: any) {
     const selectedDay = event.target.valueAsDate.getDay();
-    this.isSelectWeekday = !(!selectedDay || selectedDay == 6 || selectedDay == 0);
+    this.isSelectWeekday = !(
+      !selectedDay ||
+      selectedDay === 6 ||
+      selectedDay === 0
+    );
   }
 }
-
