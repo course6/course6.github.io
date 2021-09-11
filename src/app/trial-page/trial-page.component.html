@@ -51,8 +51,10 @@
           class="form-control"
           name="entry.1313633691"
           id="select-day"
+          (change)="changeDate($event)"
           required
         />
+        <span class="text-red" *ngIf="!isSelectWeekday">平日を入力してください</span>
       </div>
       <div class="form-group mb-2">
         <select class="form-control" name="entry.935894332" required>
