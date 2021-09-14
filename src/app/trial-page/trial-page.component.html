@@ -23,29 +23,31 @@
         <input
           class="form-check-input"
           type="checkbox"
-          value="プラン2（数・国・英）"
+          value="プラン2（数 / 国 / 英）"
           id="select-course2"
           name="entry.25222454"
         />
         <label class="form-check-label" for="select-course2">
-          プラン2（数・国・英）
+          プラン2（数 / 国 / 英）
         </label>
       </div>
       <div class="form-check mb-3">
         <input
           class="form-check-input"
           type="checkbox"
-          value="プラン3（数/ 国/ 英/ 理/ 社）"
+          value="プラン3（数 / 国 / 英 / 理 / 社）"
           id="select-course3"
           name="entry.25222454"
         />
         <label class="form-check-label" for="select-course3">
-          プラン3（数/ 国/ 英/ 理/ 社）
+          プラン3（数 / 国 / 英 / 理 / 社）
         </label>
       </div>
 
       <div class="form-group mb-2">
-        <label for="select-day">面談日時<span class="text-red"> *</span></label>
+        <label for="select-day"
+          >面談日時（平日のみ）<span class="text-red"> *</span></label
+        >
         <input
           type="date"
           class="form-control"
@@ -54,7 +56,9 @@
           (change)="changeDate($event)"
           required
         />
-        <span class="text-red" *ngIf="!isSelectWeekday">平日を入力してください</span>
+        <span class="text-red" *ngIf="!isSelectWeekday"
+          >平日を入力してください</span
+        >
       </div>
       <div class="form-group mb-2">
         <select class="form-control" name="entry.935894332" required>
