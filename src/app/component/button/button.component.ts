@@ -10,7 +10,7 @@ export class ButtonComponent implements OnInit {
   @Input() width = 320;
   @Input() height = 48;
   @Input() link = '/';
-  @Input() type = '';
+  @Input() submit = false;
 
   constructor() {}
 
