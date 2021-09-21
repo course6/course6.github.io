@@ -1,0 +1,135 @@
+<app-header></app-header>
+
+<div class="container">
+  <section class="row top">
+    <p>
+      非通塾、<br />
+      ネット進学<span>の</span><br />
+      時代へ
+    </p>
+    <p>
+      自分自身の進路と学習、<br />
+      内容も空間も他の誰かと共有しない。
+    </p>
+    <img class="top-image" src="./assets/image/mv.svg" alt="top-picture" />
+    <app-button
+      text="無料相談を申し込む"
+      link="/trial"
+      [width]="getButtonWidth()"
+    ></app-button>
+  </section>
+
+  <section class="row feature">
+    <h1>Course6の特徴</h1>
+    <div>
+      <img src="./assets/image/relax-place.svg" alt="relax-place" />
+      <div>
+        <p class="student-p-1">01</p>
+        <p class="student-p-2">自分が落ち着く場所で</p>
+        <p class="student-p-3">
+          完全オンラインのため教室がありません。<br />
+          入塾から卒業まですべてオンラインで完結させることができます。<br />
+          他の生徒に会うことは一切なく、完全プライベートで学習することができます。
+        </p>
+      </div>
+    </div>
+    <div>
+      <img src="./assets/image/output.svg" alt="output" class="pc-none" />
+      <div>
+        <p class="student-p-1">02</p>
+        <p class="student-p-2">マンツーマン・対話型</p>
+        <p class="student-p-3">
+          完全マンツーマン制を採用しています。一般的な個別指導塾のように別の生徒への対応で自分が待たされるといった心配はありません。<br />
+          また学校のような講義型ではなく対話型を採用しています。
+        </p>
+      </div>
+      <img src="./assets/image/output.svg" alt="output" class="sp-none" />
+    </div>
+    <div>
+      <img src="./assets/image/self-study.svg" alt="self-study" />
+      <div>
+        <p class="student-p-1">03</p>
+        <p class="student-p-2">自習サポート</p>
+        <p class="student-p-3">
+          自分が必要とする学力を手に入れるには自習しかありません。私たちは生徒の志望校に必要な知識量（範囲）を提示し、生徒はそれを参考に自習します。
+          自習で躓きそうな箇所（多くの生徒が躓きやすい単元については）既存の解説に拘らず、より詳細なものを作成し生徒に提供し続けます。
+          また「わかる」と「できる」は異なるという考えのもと、問題の正答率を記録、保存しています。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="row student">
+    <h1>こんな学生のための塾です</h1>
+    <div>
+      <div>
+        <span>
+          <img src="./assets/image/middle-school.svg" alt="middle-school" />
+        </span>
+        <p>中学1年生〜3年生の方</p>
+        <p>生徒は高校進学を希望している中学生です。</p>
+      </div>
+      <div>
+        <span>
+          <img src="./assets/image/online.svg" alt="online" />
+        </span>
+        <p>自分のスタイルで学習をしたい</p>
+        <p>
+          非通塾を好む方、
+          一般的な個別よりもマンツーマンで知識を自分のモノにしたいと考えてる方
+        </p>
+      </div>
+      <div>
+        <span>
+          <img
+            src="./assets/image/study-motivation.svg"
+            alt="study-motivation"
+          />
+        </span>
+        <p>平均〜上位の高校を目指している</p>
+        <p>
+          学校のテスト勉強などを自走し、より高い目標を目指す方をサポートしています。
+        </p>
+      </div>
+    </div>
+    <app-button
+      text="生徒の声を見る"
+      [height]="45"
+      [width]="240"
+      link="/student-voice"
+    ></app-button>
+  </section>
+
+  <section class="row flow">
+    <h1>入塾までの流れ</h1>
+    <div>
+      <div>
+        <p>1. 無料相談</p>
+        <img src="./assets/image/体験前面談.svg" alt="体験前面談" />
+      </div>
+      <p>></p>
+      <div>
+        <p>2. 無料体験</p>
+        <img src="./assets/image/無料体験.svg" alt="無料体験" />
+      </div>
+      <p>></p>
+      <div>
+        <p>3. 体験後面談</p>
+        <img src="./assets/image/体験後面談.svg" alt="体験後面談" />
+      </div>
+      <p>></p>
+      <div>
+        <p>4. 入塾</p>
+        <img src="./assets/image/入塾.svg" alt="入塾" />
+      </div>
+    </div>
+    <app-button
+      text="無料相談を申し込む"
+      [height]="45"
+      [width]="240"
+      link="/trial"
+    ></app-button>
+  </section>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,28 @@
+* {
+  font-family: "Noto Sans CJK JP", sans-serif !important;
+}
+body {
+  background-color: #fafafa;
+  color: #323232;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+.pc-none {
+  display: none;
+}
+@media (max-width: 749px) {
+  body {
+    background-color: #fff;
+  }
+  .sp-none {
+    display: none;
+  }
+
+  .pc-none {
+    display: initial;
+  }
+}
