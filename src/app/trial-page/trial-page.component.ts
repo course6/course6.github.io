@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var gtag: any
+
 @Component({
   selector: 'app-trial-page',
   templateUrl: './trial-page.component.html',
@@ -18,5 +20,12 @@ export class TrialPageComponent implements OnInit {
       selectedDay === 6 ||
       selectedDay === 0
     );
+  }
+
+  gtagConversion() {
+    gtag('config', 'AW-10800092951');
+    gtag('event', 'conversion', {
+      send_to: 'AW-10800092951/G3biCOTGuIADEJeu8Z0o',
+    });
   }
 }
