@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-top-page',
@@ -8,16 +9,18 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class TopPageComponent implements OnInit {
   screenWidth: number = 0;
 
-  constructor() {
-    this.getScreenSize();
+  constructor(private titleService: Title) {
+    this.setScreenWidth();
   }
 
   @HostListener('window:resize', ['$event'])
-  getScreenSize() {
+  setScreenWidth(): void {
     this.screenWidth = window.innerWidth;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.titleService.setTitle('マイネット進学');
+  }
 
   // NOTE: SPの場合app-button のみ真ん中に配置するためにスクリーンサイズから計算する
   getButtonWidth(): number {

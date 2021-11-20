@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
-declare var gtag: any
+declare var gtag: any;
 
 @Component({
   selector: 'app-trial-page',
@@ -9,9 +10,13 @@ declare var gtag: any
 })
 export class TrialPageComponent implements OnInit {
   isSelectWeekday: boolean = true;
-  constructor() {}
+  constructor(private titleService: Title) {}
 
-  ngOnInit(): void {}
+  readonly title = '無料相談申し込み';
+
+  ngOnInit(): void {
+    this.titleService.setTitle(`${this.title} | マイネット進学`);
+  }
 
   changeDate(event: any) {
     const selectedDay = event.target.valueAsDate.getDay();
