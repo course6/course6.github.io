@@ -11,6 +11,11 @@ import { TrialPageComponent } from './trial-page/trial-page.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ButtonComponent } from './component/button/button.component';
+import {
+  NgxGoogleAnalyticsModule,
+  NgxGoogleAnalyticsRouterModule,
+} from 'ngx-google-analytics';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,7 +29,12 @@ import { ButtonComponent } from './component/button/button.component';
     FooterComponent,
     ButtonComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgxGoogleAnalyticsModule.forRoot(environment.gaCode),
+    NgxGoogleAnalyticsRouterModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
