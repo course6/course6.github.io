@@ -12,7 +12,7 @@ export class TrialPageComponent implements OnInit {
   isSelectWeekday: boolean = true;
   constructor(private titleService: Title) {}
 
-  readonly title = '無料相談申し込み';
+  readonly title = '無料個別相談申し込み';
 
   ngOnInit(): void {
     this.titleService.setTitle(`${this.title} | マイネット進学`);
