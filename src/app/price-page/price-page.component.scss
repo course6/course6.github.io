@@ -1,3 +1,10 @@
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 160px;
+  box-sizing: border-box;
+}
+
 .header {
   display: block;
   height: auto;
@@ -95,4 +102,10 @@
       }
     }
   }
+}
+
+app-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
