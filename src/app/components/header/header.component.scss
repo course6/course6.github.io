@@ -1,5 +1,5 @@
 .menu-btn {
-  color: blue;
+  color: #1601ff;
   font-size: 100%;
 }
 
@@ -38,7 +38,8 @@
 .menu ul li a {
   display: block;
   font-size: 200%;
-  color: #000;
+  font-weight: 500;
+  color: #243484 !important;
 }
 
 .menu ul li:hover {
@@ -61,7 +62,6 @@
   cursor: pointer;
   background: url("../../../assets/image/logo-blue.png") no-repeat left center;
   background-size: 25%;
-
 }
 @media (max-width: 375px) {
   .logo-blue {
