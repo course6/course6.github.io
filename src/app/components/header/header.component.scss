@@ -1,13 +1,12 @@
-.menu-btn {
+#menu-btn {
   color: #1601ff;
   font-size: 100%;
+  span:after {
+    content: attr(data-txt-menu);
+  }
 }
 
-.menu-btn span:after {
-  content: attr(data-txt-menu);
-}
-
-.menu {
+#menu {
   position: fixed;
   display: table;
   top: 0;
@@ -20,41 +19,40 @@
   visibility: hidden;
   opacity: 0;
   z-index: 3;
+
+  ul {
+    padding-left: 0;
+
+    li {
+      width: 230px;
+      height: 80px;
+      line-height: 80px;
+      margin: 0 auto;
+      text-align: center;
+      list-style: none;
+
+      a {
+        display: block;
+        font-size: 200%;
+        font-weight: 500;
+        color: #243484;
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
-.menu ul {
-  padding-left: 0;
-}
-
-.menu ul li {
-  width: 230px;
-  height: 80px;
-  line-height: 80px;
-  margin: 0 auto;
-  text-align: center;
-  list-style: none;
-}
-
-.menu ul li a {
-  display: block;
-  font-size: 200%;
-  font-weight: 500;
-  color: #243484 !important;
-}
-
-.menu ul li:hover {
-  color: #999;
-  cursor: pointer;
-}
-
-.open .menu {
+.open #menu {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   visibility: visible;
   opacity: 1;
 }
 
-.open .menu-btn span:after {
+.open #menu-btn span:after {
   content: attr(data-txt-close);
 }
 

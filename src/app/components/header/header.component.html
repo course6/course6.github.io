@@ -8,7 +8,8 @@
         <div class="btn-group">
           <button
             type="button"
-            class="btn btn-light menu-btn"
+            id="menu-btn"
+            class="btn btn-light"
             (click)="openMenu()"
           >
             <span data-txt-menu="三" data-txt-close="×"></span>
@@ -16,7 +17,7 @@
         </div>
       </div>
     </nav>
-    <nav class="menu" (click)="closeMenu()">
+    <nav id="menu" (click)="closeMenu()">
       <div class="mt-5">
         <ul>
           <li><a (click)="goToLink('/')">ホーム</a></li>
