@@ -16,10 +16,20 @@ import {
   NgxGoogleAnalyticsRouterModule,
 } from 'ngx-google-analytics';
 import { environment } from '../environments/environment';
+import { HomePageComponent } from './pages/home/home-page/home-page.component';
+import { CommonExamPageComponent } from './pages/common-exam/common-exam-page/common-exam-page.component';
+import { TrackRecordPageComponent } from './pages/track-record/track-record-page/track-record-page.component';
+import { ServicePageComponent } from './pages/service/service-page/service-page.component';
+import { ContactPageComponent } from './pages/contact/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomePageComponent,
+    CommonExamPageComponent,
+    TrackRecordPageComponent,
+    ServicePageComponent,
+    ContactPageComponent,
     TopPageComponent,
     FaqPageComponent,
     PricePageComponent,
