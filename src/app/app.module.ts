@@ -8,9 +8,9 @@ import { FaqPageComponent } from './faq-page/faq-page.component';
 import { PricePageComponent } from './price-page/price-page.component';
 import { VoicePageComponent } from './voice-page/voice-page.component';
 import { TrialPageComponent } from './trial-page/trial-page.component';
-import { HeaderComponent } from './component/header/header.component';
-import { FooterComponent } from './component/footer/footer.component';
-import { ButtonComponent } from './component/button/button.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ButtonComponent } from './components/button/button.component';
 import {
   NgxGoogleAnalyticsModule,
   NgxGoogleAnalyticsRouterModule,
