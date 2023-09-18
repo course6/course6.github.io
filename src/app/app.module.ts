@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopPageComponent } from './top-page/top-page.component';
-import { FaqPageComponent } from './faq-page/faq-page.component';
 import { PricePageComponent } from './price-page/price-page.component';
 import { VoicePageComponent } from './voice-page/voice-page.component';
 import { TrialPageComponent } from './trial-page/trial-page.component';
@@ -21,6 +20,7 @@ import { CommonExamPageComponent } from './pages/common-exam/common-exam-page/co
 import { TrackRecordPageComponent } from './pages/track-record/track-record-page/track-record-page.component';
 import { ServicePageComponent } from './pages/service/service-page/service-page.component';
 import { ContactPageComponent } from './pages/contact/contact-page/contact-page.component';
+import { FaqPageComponent } from './pages/faq/faq-page/faq-page.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +28,10 @@ import { ContactPageComponent } from './pages/contact/contact-page/contact-page.
     HomePageComponent,
     CommonExamPageComponent,
     TrackRecordPageComponent,
+    FaqPageComponent,
     ServicePageComponent,
     ContactPageComponent,
     TopPageComponent,
-    FaqPageComponent,
     PricePageComponent,
     VoicePageComponent,
     TrialPageComponent,

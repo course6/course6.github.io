@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { FaqPageComponent } from './faq-page.component';
+import { FaqPageComponent } from './faq-page/faq-page.component';
 
 const routes: Routes = [
   {
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FaqPageRoutingModule {}
+export class FaqRoutingModule {}

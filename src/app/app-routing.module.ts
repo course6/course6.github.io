@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TopPageModule } from './top-page/top-page.module';
-import { FaqPageModule } from './faq-page/faq-page.module';
 import { PricePageModule } from './price-page/price-page.module';
 import { VoicePageModule } from './voice-page/voice-page.module';
 import { TrialPageModule } from './trial-page/trial-page.module';
@@ -10,6 +9,7 @@ import { CommonExamModule } from './pages/common-exam/common-exam.module';
 import { TrackRecordModule } from './pages/track-record/track-record.module';
 import { ServiceModule } from './pages/service/service.module';
 import { ContactModule } from './pages/contact/contact.module';
+import { FaqModule } from './pages/faq/faq.module';
 
 const routes: Routes = [
   {
@@ -39,7 +39,7 @@ const routes: Routes = [
   {
     path: 'faq',
     loadChildren: () =>
-      import('./faq-page/faq-page.module').then((m) => m.FaqPageModule),
+      import('./pages/faq/faq.module').then((m) => m.FaqModule),
   },
   {
     path: 'contact',
@@ -75,7 +75,6 @@ const routes: Routes = [
     RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' }),
     HomeModule,
     TopPageModule,
-    FaqPageModule,
     PricePageModule,
     VoicePageModule,
     TrialPageModule,
@@ -83,6 +82,7 @@ const routes: Routes = [
     TrackRecordModule,
     ServiceModule,
     ContactModule,
+    FaqModule,
   ],
   exports: [RouterModule],
 })
