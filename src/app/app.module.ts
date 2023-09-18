@@ -10,6 +10,8 @@ import { TrialPageComponent } from './trial-page/trial-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
+import { PageHeaderComponent } from './components/page-header/page-header.component';
+
 import {
   NgxGoogleAnalyticsModule,
   NgxGoogleAnalyticsRouterModule,
@@ -38,6 +40,7 @@ import { FaqPageComponent } from './pages/faq/faq-page/faq-page.component';
     HeaderComponent,
     FooterComponent,
     ButtonComponent,
+    PageHeaderComponent,
   ],
   imports: [
     BrowserModule,

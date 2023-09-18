@@ -1,10 +1,11 @@
 <app-header></app-header>
 
 <div class="container">
-  <section class="row header">
-    <h1>{{ title }}</h1>
-    <p>保護者から頂いた質問を随時、追加しております。</p>
-  </section>
+  <app-page-header
+    [title]="title"
+    description="保護者から頂いた質問を随時、追加しております。"
+  ></app-page-header>
+
   <section class="row faq">
     <div>
       <p><span>Q</span>通塾するにあたって揃えるべきものはありますか？</p>
