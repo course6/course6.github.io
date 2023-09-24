@@ -23,6 +23,7 @@ import { TrackRecordPageComponent } from './pages/track-record/track-record-page
 import { ServicePageComponent } from './pages/service/service-page/service-page.component';
 import { ContactPageComponent } from './pages/contact/contact-page/contact-page.component';
 import { FaqPageComponent } from './pages/faq/faq-page/faq-page.component';
+import { UserVoiceCardComponent } from './components/user-voice-card/user-voice-card.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { FaqPageComponent } from './pages/faq/faq-page/faq-page.component';
     FooterComponent,
     ButtonComponent,
     PageHeaderComponent,
+    UserVoiceCardComponent,
   ],
   imports: [
     BrowserModule,
