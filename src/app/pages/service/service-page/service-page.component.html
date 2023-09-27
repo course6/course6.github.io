@@ -1,3 +1,34 @@
 <app-header></app-header>
-<p>service-page works!</p>
+<div class="container">
+  <app-page-header
+    [title]="title"
+    description="シンプルな1コース。<br class='pc-none' />対象学年にご注意下さい。"
+  ></app-page-header>
+  <section class="row service">
+    <div class="service-card">
+      <h3>コースについて</h3>
+      <img src="./assets/image/service-card.png" class="sp-none" alt="" />
+      <img src="./assets/image/service-card-sp.png" class="pc-none" alt="" />
+    </div>
+
+    <div class="service-refund-card">
+      <h3>返金保証について</h3>
+      <p>
+        デポジット（保証金）制度は2年目（中学3年4月）から開始されます。都立共通入試で不合格だった場合に300,000円全額返金致します。入塾された方全員が対象となりますが、入塾にはかんたんな審査が御座います。無料相談をご活用下さい。
+      </p>
+      <h3 class="service-about-trial">体験授業について</h3>
+      <p>
+        体験授業は行なっておりません。合わないなと感じた場合はいつでも退塾することが可能です。<br />
+        2年目以降の退塾でもデポジット金の全額を返金致しております。授業料は受けて頂いた分だけご請求させて頂きます。
+      </p>
+    </div>
+
+    <div class="service-flow-card">
+      <h2>授業の流れ</h2>
+      <img src="./assets/image/service-flow.png" class="sp-none" alt="" />
+      <img src="./assets/image/service-flow-sp.png" class="pc-none" alt="" />
+      <app-button text="お問い合わせ" link="/contact"></app-button>
+    </div>
+  </section>
+</div>
 <app-footer></app-footer>

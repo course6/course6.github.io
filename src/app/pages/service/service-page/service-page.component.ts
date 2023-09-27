@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class ServicePageComponent implements OnInit {
   constructor(private titleService: Title) {}
-  readonly title = 'サービス';
+  readonly title = 'サービスと料金';
 
   ngOnInit(): void {
     this.titleService.setTitle(`${this.title} | マイネット進学`);
