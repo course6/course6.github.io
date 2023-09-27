@@ -11,18 +11,16 @@ body {
   }
 }
 
-.pc-none {
-  display: none;
+@media (min-width: 749px) {
+  .pc-none {
+    display: none;
+  }
 }
 @media (max-width: 749px) {
   body {
     background-color: #fff;
   }
   .sp-none {
-    display: none;
-  }
-
-  .pc-none {
-    display: initial;
+    display: none !important;
   }
 }

@@ -25,3 +25,16 @@
     margin-bottom: 132px;
   }
 }
+
+@media (max-width: 749px) {
+  .track-record {
+    h2 {
+      font-size: 32px;
+      margin: 60px 0;
+    }
+    .user-voice-cards {
+      padding: 0 16px;
+      margin-bottom: 77px;
+    }
+  }
+}
