@@ -1,0 +1,113 @@
+.top-page {
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    color: #243484;
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 56px;
+  }
+
+  h3 {
+    color: #243484;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 34.538px;
+    letter-spacing: 7.7px;
+    margin: 95px 0 33px 0;
+  }
+  .top-hr {
+    width: 95px;
+    height: 16px;
+    border-radius: 17px;
+    background: linear-gradient(270deg, #243484 0%, #4e5ca4 100%);
+    margin-bottom: 36px;
+  }
+
+  img {
+    width: 96%;
+  }
+  .top-image2 {
+    margin: 57px 0 86px 0;
+  }
+
+  .feature-card-list {
+    margin-bottom: 80px;
+    .feature-card {
+      display: flex;
+      gap: 40px;
+      border-radius: 15px;
+      background: #fff;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      padding: 23px 28px 16px 53px;
+      margin-bottom: 40px;
+      .feature-card-text {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 21px;
+        .feature-card-heading {
+          display: flex;
+          width: 550px;
+          flex-direction: column;
+          align-items: flex-start;
+          .feature-card-support-and-index {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            .feature-card-support {
+              border-bottom: 2px solid #37458d;
+              color: #37458d;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 20px;
+              letter-spacing: 0.6px;
+              margin-right: 7px;
+              padding-bottom: 10px;
+            }
+
+            .feature-card-index {
+              color: #37458d;
+              font-size: 58px;
+              font-weight: 400;
+              line-height: 58px;
+              margin-bottom: 25px;
+            }
+          }
+
+          .feature-card-title {
+            color: #323232;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 64px;
+          }
+        }
+
+        .feature-card-description {
+          color: #323232;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+      }
+
+      img {
+        width: 320px;
+      }
+    }
+  }
+
+  .top-track-record {
+    margin: 50px 0 100px 0;
+    display: flex;
+    gap: 103px;
+    img {
+      width: 235px;
+    }
+  }
+
+  app-button {
+    margin-bottom: 100px;
+  }
+}

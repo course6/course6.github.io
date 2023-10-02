@@ -1,3 +1,116 @@
 <app-header></app-header>
-<p>home-page works!</p>
+<div class="container">
+  <app-top-page-header
+    buttonText="都立共通入試について"
+    buttonLink="/common-exam"
+  ></app-top-page-header>
+  <section class="row top-page">
+    <h3>身近だけどよく知らない、都立受験</h3>
+    <div class="top-hr"></div>
+    <img src="./assets/image/top-image1.png" alt="" />
+    <img src="./assets/image/top-image2.png" class="top-image2" alt="" />
+
+    <h2>マイネット進学の特徴</h2>
+
+    <div class="feature-card-list">
+      <div class="feature-card">
+        <img src="./assets/image/feature01.svg" alt="" />
+        <div class="feature-card-text">
+          <div class="feature-card-heading">
+            <p class="feature-card-support-and-index">
+              <span class="feature-card-support">SUPPORT</span>
+              <span class="feature-card-index">01</span>
+            </p>
+            <h4 class="feature-card-title">都立共通入試特化</h4>
+          </div>
+          <p class="feature-card-description">
+            マイネット進学は他の塾と異なり、都立共通入試を専門に扱うオンラインの進学塾です。<br />
+            共通入試を受ける生徒に特化した受験スケジュール、入試対策を行っております。
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-text">
+          <div class="feature-card-heading">
+            <p class="feature-card-support-and-index">
+              <span class="feature-card-support">SUPPORT</span>
+              <span class="feature-card-index">02</span>
+            </p>
+            <h4 class="feature-card-title">各科目の成績管理</h4>
+          </div>
+          <p class="feature-card-description">
+            都立高校合格のために大きく影響する内申点。全体の約3割を占めている<br />ためとても重要です。生徒には内申点がどのような仕組みなのか説明し、<br />何をどう頑張れば良いのか理解して貰うところから始めています。<br />入塾した生徒全員が内申点を上げることに成功しています。
+          </p>
+        </div>
+        <img src="./assets/image/feature02.svg" alt="" />
+      </div>
+
+      <div class="feature-card">
+        <img src="./assets/image/feature03.svg" alt="" />
+        <div class="feature-card-text">
+          <div class="feature-card-heading">
+            <p class="feature-card-support-and-index">
+              <span class="feature-card-support">SUPPORT</span>
+              <span class="feature-card-index">03</span>
+            </p>
+            <h4 class="feature-card-title">合格率１００%</h4>
+          </div>
+          <p class="feature-card-description">
+            これまでの進学実績は、北園、文京、豊島、向丘高校で、現在の合格率は100%です。<br />1年未満の在籍で合格圏外から合格しています。※2024年からは2年制に移行します。
+          </p>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card-text">
+          <div class="feature-card-heading">
+            <p class="feature-card-support-and-index">
+              <span class="feature-card-support">SUPPORT</span>
+              <span class="feature-card-index">04</span>
+            </p>
+            <h4 class="feature-card-title">進路コミュニケーション</h4>
+          </div>
+          <p class="feature-card-description">
+            当塾の生徒は比較的倍率の高い高校受験を経験します。そのため返金保証制度を設けて<br />おります。万が一、受験で不合格だった場合、デポジット（保証金）から料金を返金し<br />ております。※詳しくはサービスページをご確認下さい。
+          </p>
+        </div>
+        <img src="./assets/image/feature04.svg" alt="" />
+      </div>
+
+      <div class="feature-card">
+        <img src="./assets/image/feature05.svg" alt="" />
+        <div class="feature-card-text">
+          <div class="feature-card-heading">
+            <p class="feature-card-support-and-index">
+              <span class="feature-card-support">SUPPORT</span>
+              <span class="feature-card-index">05</span>
+            </p>
+            <h4 class="feature-card-title">返金保証制度</h4>
+          </div>
+          <p class="feature-card-description">
+            都立共通入試を考えていても、志望校をどこにするか?
+            併願優遇はどこを選ぶか?<br />
+            都立推薦入試は受けた方が良いのか?など、共通入試以外の不安も様々です。<br />生徒にも保護者にも親身に相談に乗りながらサポート致します。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2>合格実績</h2>
+    <div class="top-track-record">
+      <img src="./assets/image/top-track-record01.png" alt="" />
+      <img src="./assets/image/top-track-record02.png" alt="" />
+      <img src="./assets/image/top-track-record03.png" alt="" />
+    </div>
+
+    <app-button text="生徒事例を見る" link="/track-record"></app-button>
+
+    <app-service-flow-card
+      heading="ご利用までの流れ"
+      pcImageSrc="./assets/image/top-flow-pc.png"
+      spImageSrc="./assets/image/top-flow-sp.png"
+    ></app-service-flow-card>
+  </section>
+</div>
 <app-footer></app-footer>
