@@ -12,4 +12,17 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
     this.titleService.setTitle('マイネット進学');
   }
+
+  currentSlideIndex: number = 0;
+  readonly slides: NodeListOf<HTMLElement> =
+    document.querySelectorAll('.slide');
+  readonly dots: NodeListOf<HTMLElement> = document.querySelectorAll('.dot');
+
+  currentSlide(n: number): void {
+    this.slides[this.currentSlideIndex].style.opacity = '0';
+    this.dots[this.currentSlideIndex].classList.remove('active');
+    this.currentSlideIndex = n;
+    this.slides[this.currentSlideIndex].style.opacity = '1';
+    this.dots[this.currentSlideIndex].classList.add('active');
+  }
 }
