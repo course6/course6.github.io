@@ -27,13 +27,13 @@
       width: 230px;
       height: 80px;
       line-height: 80px;
-      margin: 0 auto;
+      margin: 20px auto;
       text-align: center;
       list-style: none;
 
       a {
         display: block;
-        font-size: 200%;
+        font-size: 25px;
         font-weight: 500;
         color: #243484;
         &:hover {
@@ -58,7 +58,7 @@
 
 .logo-blue {
   cursor: pointer;
-  background: url("../../../assets/image/logo-blue.png") no-repeat left center;
+  background: url("/assets/image/logo-blue.png") no-repeat left center;
   background-size: 25%;
 }
 @media (max-width: 375px) {

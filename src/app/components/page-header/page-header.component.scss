@@ -5,26 +5,30 @@
   flex-direction: column;
   padding-top: 47px;
   h1 {
-    font-size: 32px;
-    line-height: 47px;
+    color: #fff;
+    font-size: 25px;
     font-weight: 500;
-    color: #ffffff;
     margin-bottom: 21px;
   }
   p {
-    color: #ffffff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
   }
 }
 
 @media (max-width: 999px) {
   .header {
+    height: 150px;
     text-align: start;
     margin-bottom: 15px;
     padding: 40px 16px 0 16px;
 
     h1 {
-      font-weight: 500;
-      margin-bottom: 42px;
+      margin-bottom: 17px;
+    }
+    p {
+      font-size: 12px;
     }
   }
 }
