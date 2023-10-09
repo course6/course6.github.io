@@ -11,12 +11,12 @@ body {
   }
 }
 
-@media (min-width: 749px) {
+@media (min-width: 999px) {
   .pc-none {
     display: none;
   }
 }
-@media (max-width: 749px) {
+@media (max-width: 999px) {
   body {
     background-color: #fff;
   }
