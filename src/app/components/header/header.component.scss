@@ -66,6 +66,15 @@
     background-size: 50%;
   }
 }
+@media (max-width: 999px) {
+  #menu {
+    ul {
+      li {
+        margin: 0 auto;
+      }
+    }
+  }
+}
 
 .first {
   margin-top: 65px;
