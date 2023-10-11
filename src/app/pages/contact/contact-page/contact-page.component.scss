@@ -1,0 +1,182 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    color: #243484;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 75px 0;
+  }
+
+  h3 {
+    color: #35438b;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 3px solid #000278;
+    margin-top: 80px;
+  }
+
+  &-paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 0 24px 50px 24px;
+    margin-bottom: 70px;
+
+    &-card {
+      display: flex;
+      margin-bottom: 40px;
+
+      &-text {
+        margin-top: 64px;
+
+        &-index {
+          color: #243484;
+          font-size: 48px;
+          font-weight: 900;
+        }
+
+        &-title {
+          color: #243484;
+          font-size: 32px;
+          font-weight: 900;
+        }
+
+        &-message {
+          color: #323232;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 160%;
+
+          span {
+            color: #ff9a00;
+          }
+        }
+      }
+
+      img {
+        width: 320px;
+      }
+
+      &-image1 {
+        margin-right: 80px;
+        margin-left: -100px;
+      }
+
+      &-image2 {
+        object-fit: contain;
+        margin: 130px 62px 0 45px;
+      }
+
+      &-image3 {
+        object-fit: contain;
+        margin: 40px 80px 0 0;
+      }
+    }
+  }
+  .spacer {
+    height: 100px;
+  }
+
+  .line-heading {
+    margin: 75px 0 30px 0;
+  }
+
+  &-line {
+    display: flex;
+    align-items: baseline;
+    gap: 0 36px;
+    margin-bottom: 57px;
+
+    a {
+      display: contents;
+    }
+
+    &-cta {
+      margin-bottom: 10px;
+    }
+
+    &-qr {
+      width: 457px;
+      padding-bottom: 6px;
+    }
+
+    &-step {
+      width: 900px;
+      margin: 60px 0 80px 0;
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .contact {
+    h2 {
+      font-size: 25px;
+      font-weight: 500;
+      margin: 80px 0 30px 0;
+    }
+    &-paper {
+      padding: 0 14px 10px 16px;
+      margin-bottom: 0;
+
+      &-card {
+        flex-direction: column;
+
+        &-text {
+          margin-top: 0;
+          &-index {
+            font-size: 24px;
+            font-weight: 700;
+          }
+
+          &-title {
+            font-size: 24px;
+            font-weight: 700;
+          }
+        }
+
+        img {
+          width: 250px;
+          margin: auto;
+        }
+
+        &-image1 {
+          margin-right: 0;
+          margin-left: 0;
+          margin-bottom: -20px;
+        }
+
+        &-image2 {
+          margin: 90px 0 20px;
+        }
+
+        &-image3 {
+          margin: 0 0 30px;
+        }
+      }
+    }
+
+    .line-heading {
+      margin: 0 0 75px 0;
+    }
+
+    &-line {
+      flex-direction: column;
+
+      &-qr {
+        width: 330px;
+      }
+
+      &-step {
+        width: 235px;
+      }
+
+      &-text {
+        margin: 0 16px;
+      }
+    }
+  }
+}

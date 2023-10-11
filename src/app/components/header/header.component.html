@@ -1,0 +1,33 @@
+<div class="container first bg-white">
+  <div class="row">
+    <div class="col"></div>
+    <nav class="navbar navbar-expand-sm fixed-top bg-white">
+      <div class="container my-1">
+        <a class="navbar-brand logo-blue" (click)="goToLink('/')"></a>
+
+        <div class="btn-group">
+          <button
+            type="button"
+            id="menu-btn"
+            class="btn btn-light"
+            (click)="openMenu()"
+          >
+            <span data-txt-menu="三" data-txt-close="×"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav id="menu" (click)="closeMenu()">
+      <div class="mt-5">
+        <ul>
+          <li><a (click)="goToLink('/')">ホーム</a></li>
+          <li><a (click)="goToLink('common-exam')">都立共通入試</a></li>
+          <li><a (click)="goToLink('track-record')">合格実績</a></li>
+          <li><a (click)="goToLink('service')">サービスと料金</a></li>
+          <li><a (click)="goToLink('faq')">よくある質問</a></li>
+          <li><a (click)="goToLink('contact')">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
