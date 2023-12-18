@@ -12,7 +12,7 @@ export class CommonExamPageComponent implements OnInit {
     protected router: Router,
     private titleService: Title,
   ) {}
-  readonly title = '都立共通入試';
+  readonly title = '都立入試';
 
   ngOnInit(): void {
     this.titleService.setTitle(`${this.title} | マイネット進学`);

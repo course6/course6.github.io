@@ -1,16 +1,6 @@
 <button
-  *ngIf="!submit"
   role="button"
   [routerLink]="link"
-  [ngStyle]="{ 'width.px': width, 'height.px': height }"
->
-  {{ text }}
-</button>
-
-<button
-  *ngIf="submit"
-  type="submit"
-  role="button"
   [ngStyle]="{ 'width.px': width, 'height.px': height }"
 >
   {{ text }}

@@ -63,7 +63,6 @@
 
       &-image1 {
         margin-right: 80px;
-        margin-left: -100px;
       }
 
       &-image2 {
@@ -108,6 +107,9 @@
       width: 900px;
       margin: 60px 0 80px 0;
     }
+  }
+  app-button {
+    margin: 100px 0;
   }
 }
 
