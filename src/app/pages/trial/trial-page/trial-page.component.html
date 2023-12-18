@@ -1,0 +1,161 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col mt-3 mb-3">
+      <h4>{{ title }}</h4>
+    </div>
+  </div>
+</div>
+
+<div class="container bg-gray p-4">
+  <div class="container bg-white mt-3 text-gray p-4">
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLScMInIacCt4FvWOlqim1Eux5GAyKoHjFJNmxDz0lw3axm5q-Q/formResponse"
+    >
+      興味のあるコース<span class="text-red"> *</span>
+      <div class="form-check my-2">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="好きな1科目"
+          id="select-course1"
+          name="entry.25222454"
+          checked
+        />
+        <label class="form-check-label" for="select-course1">
+          好きな1科目
+        </label>
+      </div>
+      <div class="form-check mb-2">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="週2（数 / 国 / 英 / 理 / 社）"
+          id="select-course2"
+          name="entry.25222454"
+        />
+        <label class="form-check-label" for="select-course2">
+          週2（数 / 国 / 英 / 理 / 社）
+        </label>
+      </div>
+      <div class="form-check mb-3">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="週3（数 / 国 / 英 / 理 / 社）"
+          id="select-course3"
+          name="entry.25222454"
+        />
+        <label class="form-check-label" for="select-course3">
+          週3（数 / 国 / 英 / 理 / 社）
+        </label>
+      </div>
+
+      <div class="form-group mb-2">
+        <label for="select-day"
+          >面談日時（平日のみ）<span class="text-red"> *</span></label
+        >
+        <input
+          type="date"
+          class="form-control"
+          name="entry.1313633691"
+          id="select-day"
+          (change)="changeDate($event)"
+          required
+        />
+        <span class="text-red" *ngIf="!isSelectWeekday"
+          >平日を入力してください</span
+        >
+      </div>
+      <div class="form-group mb-2">
+        <select class="form-control" name="entry.935894332" required>
+          <option value="10:00~" selected>10:00~</option>
+          <option value="10:30~">10:30~</option>
+          <option value="11:00~">11:00~</option>
+          <option value="11:30~">11:30~</option>
+          <option value="12:00~">12:00~</option>
+          <option value="12:30~">12:30~</option>
+          <option value="13:00~">13:00~</option>
+          <option value="13:30~">13:30~</option>
+          <option value="14:00~">14:00~</option>
+          <option value="14:30~">14:30~</option>
+          <option value="15:00~">15:00~</option>
+          <option value="15:30~">15:30~</option>
+        </select>
+      </div>
+
+      <div class="form-group mt-3">
+        <label for="student-name"
+          >生徒さま氏名<span class="text-red"> *</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          name="entry.1830998424"
+          id="student-name"
+          placeholder="例)　田中　花子"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="student-name-kana"
+          >生徒さま氏名(カナ)<span class="text-red"> *</span></label
+        >
+        <input
+          type="text"
+          class="form-control"
+          name="entry.96940126"
+          id="student-name-kana"
+          placeholder="例)　タナカ　ハナコ"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="mail-adress"
+          >メールアドレス<span class="text-red"> *</span></label
+        >
+        <input
+          type="email"
+          class="form-control"
+          name="entry.328800566"
+          id="mail-adress"
+          placeholder="例)　example@example.com"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="phone-number">電話番号</label>
+        <input
+          type="text"
+          class="form-control"
+          name="entry.57216024"
+          id="phone-number"
+          placeholder="例)　01-2345-6789"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="some-request">ご質問・ご要望・ご希望など</label>
+        <textarea
+          class="form-control"
+          name="entry.232600986"
+          id="some-request"
+          rows="3"
+        ></textarea>
+      </div>
+      <div class="trial-app-button">
+        <app-button
+          text="この内容で送信する"
+          [width]="240"
+          [submit]="true"
+          (click)="gtagConversion()"
+        ></app-button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<app-footer></app-footer>

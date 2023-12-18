@@ -22,6 +22,7 @@ import { FaqPageComponent } from './pages/faq/faq-page/faq-page.component';
 import { UserVoiceCardComponent } from './components/user-voice-card/user-voice-card.component';
 import { TopPageHeaderComponent } from './components/top-page-header/top-page-header.component';
 import { ServiceFlowCardComponent } from './components/service-flow-card/service-flow-card.component';
+import { TrialPageComponent } from './pages/trial/trial-page/trial-page.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ServiceFlowCardComponent } from './components/service-flow-card/service
     ServicePageComponent,
     FaqPageComponent,
     ContactPageComponent,
+    TrialPageComponent,
     HeaderComponent,
     FooterComponent,
     ButtonComponent,
