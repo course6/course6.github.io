@@ -2,11 +2,11 @@
 <div class="container">
   <app-page-header
     [title]="title"
-    description="お問い合わせは24時間365日承っております。"
+    description="予約フォームと公式LINEの2種類からお選び頂けます。"
   ></app-page-header>
   <section class="row contact">
     <div class="contact-paper">
-      <h2>いつでもご相談下さい</h2>
+      <h2>お問い合わせの流れ</h2>
 
       <div class="contact-paper-card">
         <img
@@ -16,9 +16,14 @@
         />
         <div class="contact-paper-card-text">
           <p class="contact-paper-card-text-index">01</p>
-          <p class="contact-paper-card-text-title">公式LINEを追加</p>
+          <p class="contact-paper-card-text-title">
+            フォームからメニューを選択
+          </p>
           <p class="contact-paper-card-text-message">
-            お申し込みは24時間受け付けております。<br />問い合わせを頂いてから1営業日以内にご連絡差し上げます。
+            「まずは話を聞いてみたい」「すぐに入塾したい」など、ご希望のメニューと日時を選択することができます。送信ボタンを押すと指定したアドレスにオンライン相談の案内メールが届きます。
+            <span
+              >※問い合わせに利用されたメールアドレスはオンライン面談終了後に破棄致します。メール等を使い、こちらから営業をかけることは一切御座いません。</span
+            >
           </p>
         </div>
       </div>
@@ -31,11 +36,11 @@
         />
         <div class="contact-paper-card-text">
           <p class="contact-paper-card-text-index">02</p>
-          <p class="contact-paper-card-text-title">オンライン受験相談</p>
+          <p class="contact-paper-card-text-title">予約日当日</p>
           <p class="contact-paper-card-text-message">
-            お子様の現在の内申点、通学距離などを考慮し、受験校になりそうな都立共通問題校を3校ピックアップ致します。またそれに合わせた私立併願校のご案内も可能です。塾のシステムに関するご質問も承っております。お気軽にご相談ください。<span
-              >※通話の際、ビデオはオフにして頂いて構いません。</span
-            >
+            マイネット進学からビデオ通話のリンクがメールに届きますので、当日はそちらをクリックして入室ください。お使いのスマートフォン、タブレット、PCで通話が可能です（通話は最大1時間です）。
+            もっと相談したい場合は、フォームから再度ご予約ください。また、ご都合が悪くなった場合の振替も承っております。
+            <span>※通話の際、ビデオはオフにして頂いて構いません。</span>
           </p>
         </div>
         <img
@@ -54,19 +59,17 @@
         />
         <div class="contact-paper-card-text">
           <p class="contact-paper-card-text-index">03</p>
-          <p class="contact-paper-card-text-title">入塾審査</p>
+          <p class="contact-paper-card-text-title">次やることが明確になる</p>
           <p class="contact-paper-card-text-message">
-            ご希望の方のみ、入塾審査を承っております。<br class="sp-none" />
-            審査は主に中学1年2学期終了時点の内申点を用いて行っております。<br
-              class="sp-none"
-            />
-            オンライン受験相談と同じ日に行うことも可能です。
+            マイネット進学のオンライン相談で、現時点でのお子様の位置（安全校、合格校、努力校）が見えてきます。進学希望の高校があれば入試1科目あたり何点取るべきなのか算出することも可能です。「今」が分かると次の行動、方針が定まって来るかと思います。
           </p>
         </div>
       </div>
+
+      <app-button text="予約フォーム" link="/trial" [width]="250"></app-button>
     </div>
 
-    <h2 class="line-heading">公式LINEの追加はこちら</h2>
+    <h2 class="line-heading">LINEでのお問い合わせ</h2>
     <div class="contact-line">
       <a href="https://lin.ee/iVH6x6T" target="_blank">
         <img

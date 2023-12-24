@@ -106,6 +106,10 @@
       width: 235px;
     }
   }
+
+  app-button {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 999px) {
@@ -115,7 +119,7 @@
       font-weight: 700;
     }
     h3 {
-      font-size: 15px;
+      font-size: 13px;
       font-style: normal;
       font-weight: 700;
       line-height: 34.538px;
@@ -167,6 +171,10 @@
       margin: 0 0 50px 0;
       flex-direction: column;
       gap: 50px;
+    }
+
+    app-button {
+      margin-bottom: 0;
     }
   }
 }

@@ -6,6 +6,7 @@ import { TrackRecordModule } from './pages/track-record/track-record.module';
 import { ServiceModule } from './pages/service/service.module';
 import { ContactModule } from './pages/contact/contact.module';
 import { FaqModule } from './pages/faq/faq.module';
+import { TrialModule } from './pages/trial/trial.module';
 
 const routes: Routes = [
   {
@@ -42,6 +43,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/contact/contact.module').then((m) => m.ContactModule),
   },
+  {
+    path: 'trial',
+    loadChildren: () =>
+      import('./pages/trial/trial.module').then((m) => m.TrialModule),
+  },
   { path: '**', redirectTo: '/' },
 ];
 
@@ -54,6 +60,7 @@ const routes: Routes = [
     ServiceModule,
     FaqModule,
     ContactModule,
+    TrialModule,
   ],
   exports: [RouterModule],
 })
