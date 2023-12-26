@@ -59,12 +59,18 @@
 
 .logo-blue {
   cursor: pointer;
-  background: url("/assets/image/logo-blue.png") no-repeat left center;
-  background-size: 25%;
+  background: url("/assets/image/logo.png") no-repeat left center;
+}
+
+.navbar-brand {
+  background-size: contain;
+  height: 36px;
+  width: 100%;
+  margin-left: -15px;
 }
 @media (max-width: 375px) {
-  .logo-blue {
-    background-size: 50%;
+  .navbar-brand {
+    width: 50%;
   }
 }
 @media (max-width: 999px) {
@@ -75,12 +81,6 @@
 
 .first {
   margin-top: 65px;
-}
-
-.navbar-brand {
-  background-size: contain;
-  height: 25px;
-  width: 40%;
 }
 
 nav {
