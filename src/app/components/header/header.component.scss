@@ -59,12 +59,24 @@
 
 .logo-blue {
   cursor: pointer;
-  background: url("/assets/image/logo-blue.png") no-repeat left center;
-  background-size: 25%;
+  background: url("/assets/image/logo.png") no-repeat left center;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-brand {
+  background-size: contain;
+  height: 53px;
+  width: 100%;
+  margin-left: -25px;
+  padding: 0;
 }
 @media (max-width: 375px) {
-  .logo-blue {
-    background-size: 50%;
+  .navbar-brand {
+    width: 50%;
+    margin-left: -14px;
   }
 }
 @media (max-width: 999px) {
@@ -73,14 +85,9 @@
   }
 }
 
+// NOTE: Same size as the HeaderComponent
 .first {
-  margin-top: 65px;
-}
-
-.navbar-brand {
-  background-size: contain;
-  height: 25px;
-  width: 40%;
+  margin-top: 53px;
 }
 
 nav {
