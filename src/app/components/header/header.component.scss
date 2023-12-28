@@ -62,11 +62,16 @@
   background: url("/assets/image/logo.png") no-repeat left center;
 }
 
+.navbar {
+  padding: 0;
+}
+
 .navbar-brand {
   background-size: contain;
-  height: 36px;
+  height: 53px;
   width: 100%;
-  margin-left: -15px;
+  margin-left: -25px;
+  padding: 0;
 }
 @media (max-width: 375px) {
   .navbar-brand {
@@ -79,8 +84,9 @@
   }
 }
 
+// NOTE: Same size as the HeaderComponent
 .first {
-  margin-top: 65px;
+  margin-top: 53px;
 }
 
 nav {
