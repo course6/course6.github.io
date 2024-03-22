@@ -57,22 +57,21 @@
         }
       }
 
-      img {
-        width: 320px;
-      }
-
       &-image1 {
         margin-right: 80px;
+        width: 320px;
       }
 
       &-image2 {
         object-fit: contain;
-        margin: 130px 62px 0 45px;
+        margin: 130px 30px 0 45px;
+        width: 277px;
       }
 
       &-image3 {
         object-fit: contain;
         margin: 40px 80px 0 0;
+        width: 320px;
       }
     }
   }
@@ -153,6 +152,7 @@
 
         &-image2 {
           margin: 90px 0 20px;
+          width: 277px;
         }
 
         &-image3 {
