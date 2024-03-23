@@ -25,11 +25,30 @@
     margin-bottom: 36px;
   }
 
+  .ideal-and-reality {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 110px;
+    span {
+      font-size: 34px;
+      color: #243484;
+    }
+  }
+
   img {
     width: 96%;
   }
   .top-image2 {
     margin: 57px 0 86px 0;
+  }
+
+  .top-image3 {
+    margin-top: 20px;
+  }
+
+  .top-image4 {
+    margin-bottom: 80px;
+    width: 100%;
   }
 
   .feature-card-list {
@@ -40,7 +59,7 @@
       border-radius: 15px;
       background: #fff;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-      padding: 23px 28px 16px 53px;
+      padding: 23px 28px 16px 43px;
       margin-bottom: 40px;
       .feature-card-text {
         display: inline-flex;
