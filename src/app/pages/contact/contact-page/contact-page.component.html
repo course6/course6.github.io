@@ -63,43 +63,123 @@
           </p>
         </div>
       </div>
-
-      <app-button text="予約フォーム" link="/trial" [width]="250"></app-button>
     </div>
 
-    <h2 class="line-heading">LINEでのお問い合わせ</h2>
-    <div class="contact-line">
-      <a href="https://lin.ee/iVH6x6T" target="_blank">
-        <img
-          src="./assets/image/line-cta.png"
-          class="contact-line-cta"
-          alt="友だち追加"
-        />
-        <img
-          src="./assets/image/line-qr.png"
-          class="contact-line-qr"
-          alt="友だち追加"
-        />
-      </a>
-    </div>
-    <p class="contact-line-text">
-      スマートフォンの方は上のボタンから簡単に友だち追加できます。または、LINEアプリにて「143nvqtl」で<br
-        class="sp-none"
-      />
-      ID検索、またはQRコードを読み込んで「マイネット進学」を友だち追加してください。
-    </p>
+    <div class="contact-form-paper">
+      <h2>お問い合わせに関して</h2>
+      <p>
+        お問い合わせ後、<br class="pc-none" />1営業日以内にご連絡差し上げます。
+      </p>
 
-    <h3>LINE無料受験相談の簡単3ステップ！</h3>
-    <img
-      src="./assets/image/line-step-pc.png"
-      class="contact-line-step sp-none"
-      alt=""
-    />
-    <img
-      src="./assets/image/line-step-sp.png"
-      class="contact-line-step pc-none"
-      alt=""
-    />
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSc0VI9MGAzPcy7tiyupDv1gwVpipJX-KuU2nPot6KKG6MQ48Q/formResponse"
+        class="form-container"
+      >
+        <div class="contact-form-group">
+          <div>希望メニュー<span class="text-red"> ※</span></div>
+          <div>
+            <div class="form-radio my-2">
+              <input
+                class="form-radio-input"
+                type="radio"
+                value="まずは話を聞いてみたい"
+                id="select-course1"
+                name="entry.25222454"
+                checked
+              />
+              <label class="form-radio-label" for="select-course1">
+                まずは話を聞いてみたい
+              </label>
+            </div>
+            <div class="form-radio my-2">
+              <input
+                class="form-radio-input"
+                type="radio"
+                value="無料体験を受けたい"
+                id="select-course2"
+                name="entry.25222454"
+              />
+              <label class="form-radio-label" for="select-course2">
+                無料体験を受けたい
+              </label>
+            </div>
+            <div class="form-radio mb-2">
+              <input
+                class="form-radio-input"
+                type="radio"
+                value="入塾したい"
+                id="select-course3"
+                name="entry.25222454"
+              />
+              <label class="form-radio-label" for="select-course3">
+                入塾したい
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="parent-name"
+            >保護者様氏名<span class="text-red"> ※</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="entry.1830998424"
+            id="parent-name"
+            placeholder="（必須）例：田中　花子"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="parent-name-kana"
+            >フリガナ<span class="text-red"> ※</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="entry.96940126"
+            id="parent-name-kana"
+            placeholder="（必須）例：タナカ　ハナコ"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mail-adress"
+            >メールアドレス<span class="text-red"> ※</span></label
+          >
+          <input
+            type="email"
+            class="form-control"
+            name="entry.328800566"
+            id="mail-adress"
+            placeholder="（必須）例：info@example.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="some-request">ご質問・ご要望など</label>
+          <textarea
+            class="form-control"
+            name="entry.232600986"
+            id="some-request"
+            placeholder="ご質問・ご要望など"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="trial-app-button">
+          <app-button
+            text="送信する"
+            [width]="240"
+            [submit]="true"
+            (click)="gtagConversion()"
+          ></app-button>
+        </div>
+      </form>
+    </div>
   </section>
 </div>
 <app-footer></app-footer>

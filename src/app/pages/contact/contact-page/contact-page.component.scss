@@ -107,13 +107,49 @@
       margin: 60px 0 80px 0;
     }
   }
-  app-button {
-    margin: 100px 0;
+
+  &-form-paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 30px 110px 100px 75px;
+    margin-bottom: 70px;
+    width: 100%;
+
+    form {
+      width: 100%;
+    }
+
+    .contact-form-group,
+    .form-group {
+      display: flex;
+      gap: 50px;
+      label,
+      div {
+        min-width: 150px;
+      }
+    }
+
+    h2 {
+      margin: 50px 0;
+    }
+
+    p {
+      margin-bottom: 50px;
+    }
+
+    .trial-app-button {
+      margin-top: 50px;
+      text-align: center;
+    }
   }
 }
 
 @media (max-width: 999px) {
   .contact {
+    background-color: #fafafa;
+
     h2 {
       font-size: 25px;
       font-weight: 500;
@@ -121,7 +157,6 @@
     }
     &-paper {
       padding: 0 14px 10px 16px;
-      margin-bottom: 0;
 
       &-card {
         flex-direction: column;
@@ -180,5 +215,31 @@
         margin: 0 16px;
       }
     }
+
+    &-form-paper {
+      padding: 0 14px 10px 16px;
+
+      p {
+        text-align: center;
+      }
+
+      .contact-form-group,
+      .form-group {
+        display: block;
+        margin-top: 30px;
+      }
+
+      .trial-app-button {
+        margin-top: 65px;
+      }
+    }
   }
+}
+
+.text-red {
+  color: red;
+}
+
+.bg-gray {
+  background-color: #fafafa;
 }
