@@ -42,8 +42,13 @@
     margin: 57px 0 86px 0;
   }
 
-  .top-image3 {
-    margin-top: 20px;
+  .top-image3-div {
+    width: 100%;
+    overflow-x: scroll;
+    .top-image3 {
+      margin-top: 20px;
+      width: 960px;
+    }
   }
 
   .top-image4 {

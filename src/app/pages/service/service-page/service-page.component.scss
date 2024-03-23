@@ -11,6 +11,10 @@
 
   .price-table {
     width: 100%;
+    overflow-x: scroll;
+    img {
+      width: 960px;
+    }
   }
 
   .service-refund-card {
@@ -53,6 +57,14 @@
   .service {
     .service-refund-card {
       padding: 0 40px 0 24px;
+    }
+
+    .service-refund-card {
+      .fee {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }
