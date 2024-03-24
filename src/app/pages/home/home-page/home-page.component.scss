@@ -64,13 +64,14 @@
       border-radius: 15px;
       background: #fff;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-      padding: 23px 28px 16px 43px;
+      padding: 23px 70px 16px 43px;
       margin-bottom: 40px;
       .feature-card-text {
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 21px;
+        max-width: 500px;
         .feature-card-heading {
           display: flex;
           width: 550px;
