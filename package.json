@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
     "ngx-google-analytics": "^14.0.1",
+    "simplebar-angular": "^3.2.4",
     "zone.js": "~0.13.1"
   },
   "devDependencies": {

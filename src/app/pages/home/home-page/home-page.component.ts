@@ -18,6 +18,8 @@ export class HomePageComponent implements OnInit {
     document.querySelectorAll('.slide');
   readonly dots: NodeListOf<HTMLElement> = document.querySelectorAll('.dot');
 
+  options = { forceVisible: true, autoHide: false, direction: 'rtl' };
+
   currentSlide(n: number): void {
     this.slides[this.currentSlideIndex].style.opacity = '0';
     this.dots[this.currentSlideIndex].classList.remove('active');

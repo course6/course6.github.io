@@ -10,6 +10,8 @@ export class ServicePageComponent implements OnInit {
   constructor(private titleService: Title) {}
   readonly title = 'サービスと料金';
 
+  options = { forceVisible: true, autoHide: false, direction: 'rtl' };
+
   ngOnInit(): void {
     this.titleService.setTitle(`${this.title} | マイネット進学`);
   }
