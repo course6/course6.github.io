@@ -1,35 +1,44 @@
 .service {
-  .service-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    margin: 68px 120px 37px 120px;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    color: #243484;
+    font-weight: 500;
+    font-size: 35px;
+    margin: 75px 0;
+  }
 
-    h3 {
-      color: #243484;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 57.2px;
-      border-bottom: 3px solid #243484;
-      margin-bottom: 28px;
-    }
+  .price-table {
+    width: 100%;
+    overflow-x: scroll;
     img {
-      width: 100%;
+      width: 960px;
     }
   }
 
   .service-refund-card {
     background: #fff;
-    padding: 125px 70px 86px 50px;
+    margin: 50px 0 100px 0;
+    padding: 125px 40px 60px 40px;
 
     h3 {
       color: #35438b;
       font-size: 20px;
       font-weight: 700;
+      padding-bottom: 10px;
       line-height: 34.28px;
-      border-bottom: 3px solid #000278;
+      border-bottom: 1px solid #000278;
     }
+
+    .fee {
+      display: flex;
+      justify-content: end;
+      img {
+        width: 430px;
+      }
+    }
+
     .service-about-trial {
       margin-top: 50px;
     }
@@ -46,22 +55,16 @@
 
 @media (max-width: 999px) {
   .service {
-    .service-card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-      margin: 15px 16px 50px 16px;
-      padding: 21px 16px 33px 16px;
-
-      h3 {
-        font-size: 22px;
-        font-weight: 700;
-        line-height: 57.2px;
-      }
+    .service-refund-card {
+      padding: 0 40px 0 24px;
     }
 
     .service-refund-card {
-      padding: 0 40px 0 24px;
+      .fee {
+        img {
+          width: 100%;
+        }
+      }
     }
   }
 }

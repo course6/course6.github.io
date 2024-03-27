@@ -17,10 +17,17 @@ body {
   }
 }
 @media (max-width: 999px) {
-  body {
-    background-color: #fff;
-  }
   .sp-none {
     display: none !important;
   }
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  --bg-opacity: 1;
+  background-color: #b2b2b2;
 }

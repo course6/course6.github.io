@@ -2,7 +2,7 @@
 <div class="container">
   <app-page-header
     [title]="title"
-    description="予約フォームと公式LINEの2種類からお選び頂けます。"
+    description="お好みのメニューを選ぶことができます。"
   ></app-page-header>
   <section class="row contact">
     <div class="contact-paper">
@@ -16,14 +16,9 @@
         />
         <div class="contact-paper-card-text">
           <p class="contact-paper-card-text-index">01</p>
-          <p class="contact-paper-card-text-title">
-            フォームからメニューを選択
-          </p>
+          <p class="contact-paper-card-text-title">メニューを選択</p>
           <p class="contact-paper-card-text-message">
-            「まずは話を聞いてみたい」「すぐに入塾したい」など、ご希望のメニューと日時を選択することができます。送信ボタンを押すと指定したアドレスにオンライン相談の案内メールが届きます。
-            <span
-              >※問い合わせに利用されたメールアドレスはオンライン面談終了後に破棄致します。メール等を使い、こちらから営業をかけることは一切御座いません。</span
-            >
+            「まずは話を聞いてみたい（相談したいも可）」「無料体験を受けてみたい」「すぐに入塾したい」からご希望のメニューを選択することができます。送信ボタンを押すと指定したメールアドレスにご予約の案内メールが届きます。
           </p>
         </div>
       </div>
@@ -36,11 +31,13 @@
         />
         <div class="contact-paper-card-text">
           <p class="contact-paper-card-text-index">02</p>
-          <p class="contact-paper-card-text-title">予約日当日</p>
+          <p class="contact-paper-card-text-title">日程調整</p>
           <p class="contact-paper-card-text-message">
-            マイネット進学からビデオ通話のリンクがメールに届きますので、当日はそちらをクリックして入室ください。お使いのスマートフォン、タブレット、PCで通話が可能です（通話は最大1時間です）。
-            もっと相談したい場合は、フォームから再度ご予約ください。また、ご都合が悪くなった場合の振替も承っております。
-            <span>※通話の際、ビデオはオフにして頂いて構いません。</span>
+            マイネット進学から1営業日以内に日程調整のメールを送らせて頂きます。<br />
+            どのメニューを選択した場合でも一度、オンライン面談をさせて頂きます。<br />
+            <span
+              >※迷惑フォルダにメールが届く場合も御座いますのでそちらもご確認下さい。</span
+            >
           </p>
         </div>
         <img
@@ -59,49 +56,130 @@
         />
         <div class="contact-paper-card-text">
           <p class="contact-paper-card-text-index">03</p>
-          <p class="contact-paper-card-text-title">次やることが明確になる</p>
+          <p class="contact-paper-card-text-title">予約日当日</p>
           <p class="contact-paper-card-text-message">
-            マイネット進学のオンライン相談で、現時点でのお子様の位置（安全校、合格校、努力校）が見えてきます。進学希望の高校があれば入試1科目あたり何点取るべきなのか算出することも可能です。「今」が分かると次の行動、方針が定まって来るかと思います。
+            マイネット進学からビデオ通話のリンクがメールに届きますので、当日はそちらをクリックして入室ください。お使いのスマートフォン、タブレット、PCで通話が可能です（通話は最大1時間です）。ご都合が悪くなった場合の振替も承っております。
+            <span>※通話の際、ビデオモードをオフにして頂いて構いません。</span>
           </p>
         </div>
       </div>
-
-      <app-button text="予約フォーム" link="/trial" [width]="250"></app-button>
     </div>
 
-    <h2 class="line-heading">LINEでのお問い合わせ</h2>
-    <div class="contact-line">
-      <a href="https://lin.ee/iVH6x6T" target="_blank">
-        <img
-          src="./assets/image/line-cta.png"
-          class="contact-line-cta"
-          alt="友だち追加"
-        />
-        <img
-          src="./assets/image/line-qr.png"
-          class="contact-line-qr"
-          alt="友だち追加"
-        />
-      </a>
-    </div>
-    <p class="contact-line-text">
-      スマートフォンの方は上のボタンから簡単に友だち追加できます。または、LINEアプリにて「143nvqtl」で<br
-        class="sp-none"
-      />
-      ID検索、またはQRコードを読み込んで「マイネット進学」を友だち追加してください。
-    </p>
+    <div class="contact-form-paper">
+      <h2>お問い合わせに関して</h2>
+      <p>
+        お問い合わせ後、<br class="pc-none" />1営業日以内にご連絡差し上げます。
+      </p>
 
-    <h3>LINE無料受験相談の簡単3ステップ！</h3>
-    <img
-      src="./assets/image/line-step-pc.png"
-      class="contact-line-step sp-none"
-      alt=""
-    />
-    <img
-      src="./assets/image/line-step-sp.png"
-      class="contact-line-step pc-none"
-      alt=""
-    />
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSc0VI9MGAzPcy7tiyupDv1gwVpipJX-KuU2nPot6KKG6MQ48Q/formResponse"
+        class="form-container"
+      >
+        <div class="contact-form-group">
+          <div>希望メニュー<span class="text-red"> ※</span></div>
+          <div>
+            <div class="form-radio my-2">
+              <input
+                class="form-radio-input"
+                type="radio"
+                value="まずは話を聞いてみたい"
+                id="select-course1"
+                name="entry.25222454"
+                checked
+              />
+              <label class="form-radio-label" for="select-course1">
+                まずは話を聞いてみたい
+              </label>
+            </div>
+            <div class="form-radio my-2">
+              <input
+                class="form-radio-input"
+                type="radio"
+                value="無料体験を受けたい"
+                id="select-course2"
+                name="entry.25222454"
+              />
+              <label class="form-radio-label" for="select-course2">
+                無料体験を受けたい
+              </label>
+            </div>
+            <div class="form-radio mb-2">
+              <input
+                class="form-radio-input"
+                type="radio"
+                value="入塾したい"
+                id="select-course3"
+                name="entry.25222454"
+              />
+              <label class="form-radio-label" for="select-course3">
+                入塾したい
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="parent-name"
+            >保護者様氏名<span class="text-red"> ※</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="entry.1830998424"
+            id="parent-name"
+            placeholder="（必須）例：田中　花子"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="parent-name-kana"
+            >フリガナ<span class="text-red"> ※</span></label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="entry.96940126"
+            id="parent-name-kana"
+            placeholder="（必須）例：タナカ　ハナコ"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="mail-adress"
+            >メールアドレス<span class="text-red"> ※</span></label
+          >
+          <input
+            type="email"
+            class="form-control"
+            name="entry.328800566"
+            id="mail-adress"
+            placeholder="（必須）例：info@example.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="some-request">ご質問・ご要望など</label>
+          <textarea
+            class="form-control"
+            name="entry.232600986"
+            id="some-request"
+            placeholder="ご質問・ご要望など"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="trial-app-button">
+          <app-button
+            text="送信する"
+            [width]="240"
+            [submit]="true"
+            (click)="gtagConversion()"
+          ></app-button>
+        </div>
+      </form>
+    </div>
   </section>
 </div>
 <app-footer></app-footer>

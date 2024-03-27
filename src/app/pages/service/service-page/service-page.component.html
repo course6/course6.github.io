@@ -2,29 +2,32 @@
 <div class="container">
   <app-page-header
     [title]="title"
-    description="シンプルな1コース。"
+    description="シンプルな3つのコース"
   ></app-page-header>
   <section class="row service">
-    <div class="service-card">
-      <h3>コースについて</h3>
-      <img src="./assets/image/service-card.png" class="sp-none" alt="" />
-      <img src="./assets/image/service-card-sp.png" class="pc-none" alt="" />
+    <h2>料金</h2>
+
+    <div class="price-table scrollbar">
+      <img src="./assets/image/price-table.png" alt="" />
     </div>
 
     <div class="service-refund-card">
-      <h3>返金保証について</h3>
+      <h3>成功報酬のお支払い月について</h3>
       <p>
-        デポジット（保証金）制度は2年目（中学3年4月）から適用されます。都立共通入試で不合格だった場合に300,000円全額返金致します。入塾された方全員が対象となりますが、入塾にはかんたんな審査が御座います。無料相談をご活用下さい。
+        新学期で兄弟姉妹、お金のかかるタイミングが重なってしまう方は成功報酬の支払い時期を1ヶ月ずらすことが可能です。
       </p>
-      <h3 class="service-about-trial">体験授業について</h3>
+      <div class="fee">
+        <img src="./assets/image/fee.png" alt="" />
+      </div>
+      <h3 class="service-about-trial">講習について</h3>
       <p>
-        体験授業は行なっておりません。合わないと感じた場合はいつでも退塾することが可能です。<br />
-        2年目以降の退塾でもデポジット金の全額を返金致しております。授業料は受けて頂いた分だけご請求させて頂きます。
+        当塾は講習なしで合格できるよう計画を立てています。希望があれば承りますが、こちらから勧めることは御座いません。<br />
+        ※卒業生全員が講習を1コマも取らずに志望校に合格しています。
       </p>
     </div>
 
     <app-service-flow-card
-      heading="授業の流れ"
+      heading="授業当日の流れ"
       pcImageSrc="./assets/image/service-flow.png"
       spImageSrc="./assets/image/service-flow-sp.png"
     ></app-service-flow-card>
