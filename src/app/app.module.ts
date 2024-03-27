@@ -23,6 +23,7 @@ import { UserVoiceCardComponent } from './components/user-voice-card/user-voice-
 import { TopPageHeaderComponent } from './components/top-page-header/top-page-header.component';
 import { ServiceFlowCardComponent } from './components/service-flow-card/service-flow-card.component';
 import { TrialPageComponent } from './pages/trial/trial-page/trial-page.component';
+import { SimplebarAngularModule } from 'simplebar-angular';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { TrialPageComponent } from './pages/trial/trial-page/trial-page.componen
     AppRoutingModule,
     NgxGoogleAnalyticsModule.forRoot(environment.gaCode),
     NgxGoogleAnalyticsRouterModule,
+    SimplebarAngularModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
